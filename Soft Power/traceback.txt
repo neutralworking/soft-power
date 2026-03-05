@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 55, in script
+    jump rons_office
+ScriptError: could not find label 'rons_office'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 55, in script
+    jump rons_office
+  File "/Applications/renpy-8.3.2-sdk/renpy/ast.py", line 1699, in execute
+    rv = renpy.game.script.lookup(target)
+  File "/Applications/renpy-8.3.2-sdk/renpy/script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'rons_office'.
+
+macOS-10.16-x86_64-i386-64bit x86_64
+Ren'Py 8.3.2.24090902
+Soft Power 1.0
+Sat Nov  2 11:39:11 2024
