@@ -128,13 +128,13 @@ He had fallen out of love and grace with Delphine,
 
 Five years prior a singer in a 2B band,
 
-But now his incredibly famous ex-flame.
+But now a face on every bus on Chalk Farm Road.
 
 She lived in the Camden Square flat with their daughter,
 
 He'd drifted so far out to Bermudan waters
 
-Than that, it\'s been six weeks since he changed her nappy,
+It's been six weeks since he changed her nappy,
 
 Joly couldn\'t be sure if she wore them anymore.
 
@@ -220,7 +220,7 @@ Teeth smiles flashed at some unimpressed gash in the line.
 
 A tear wells, like Orson. Prismed, he viewed a friend,
 
-Tom Eliot-Windsor, waving like no tomorrow.
+Tom Windsor, waving like no tomorrow.
 
 Funny hat, shiny pants, half an ounce in his hands,
 
@@ -238,7 +238,7 @@ So I feel it\'s only fair in his honour, eh?
 
 *JOLY AND TOM DO LINES*
 
-I mean we had the same charlie plug, Dante.
+We shared a charlie plug — Dante, you knew him —
 
 In fact, I thought that the whole event was \"catered\"
 
@@ -358,7 +358,7 @@ A long winter of mishaps and setbacks
 
 Trilled with flashes and hot spells,
 
-So you don\'t forgot how that feels.
+So you don\'t forget how that feels.
 
 The type of winter that makes you consider
 
@@ -540,49 +540,35 @@ Matchbook in the headstock, The Albion on the sleeve.
 
 **YOSHIKOKO**
 
-I go to a place
+I live above a pub
 
-When I\'m allowed
+Where no one finds me
 
-It is close to me
+Four stops from here
 
-Four parcels away
+The place will remind you
 
-I am an orator
+Of somewhere you've lost
 
-I compare our worlds
+Or haven't been to yet
 
-I know it left you
+I keep a room there
 
-But it\'s still with me
+For people like us
 
-I\'m glad that you got free
+Come when you're ready
 
-Happy for your daughter
-
-I wish for that as well
-
-Flowing like that water
-
-Playing in the gutter
-
-Slipping to grey canals
-
-Brain soft as butter
-
-Fruit of our ancestoral
-
-Mystic quest, inner eye
-
-Apple of a gemini
-
-Indescribed alliteri
-
-お願いします, ください
+The door doesn't lock
 
 **TYRESE**
 
-He pocketed the matchbook. She didn\'t stop playing.
+She pressed the matchbook into his palm and kept playing.
+
+He read the sleeve — The Albion, Bello Road — and pocketed it
+
+Like a prescription he'd fill when the pain got worse.
+
+He went back in. The monitors were already screaming.
 
 *INSIDE, THE MONITORS CRACKLE*
 
@@ -632,7 +618,7 @@ Jolyon, please calm down. Let\'s go and talk over there.
 
 *INT - KWAME\'S KITCHEN*
 
-*WK AND KWAME READ EACH OTHER LYRICS. TOM ELIOT-WHITE LOOKS AROUND AND TAKES COCAINE*
+*WK AND KWAME READ LYRICS. TOM WINDSOR LOOKS AROUND AND TAKES COCAINE*
 
 **WK**
 
@@ -686,9 +672,9 @@ After all A-stars they depart to pater\'s alma mater,
 
 Smarter than half the class but no one talks faster.
 
-Hard is the battle so bravado takes charge.
+Hard is the battle, so the bravado writes the cheques.
 
-So long they walked this path, so long it lasts.
+The path walked them. They thought it was the other way.
 
 **TOM**
 
@@ -712,17 +698,15 @@ The next step, I quit uni and Oxford in the same breath.
 
 That night I found an open mic and wrecked bars.
 
-Rufie saw and said I was a for-sure born star,
+WK was there, said I reminded him of someone —
 
-He took me out to his sports car in the car park
+Couldn\'t place the face but knew the cadence from afar.
 
-And brought along two hardcore pornstars in sports bras.
+We talked til dawn then walked here from the station,
 
-Well, not for long\... we partied all fortnight and more,
+He said move in, there\'s room, I said I\'m always in
 
-Then when he asked me to move in here I said sure,
-
-I\'m always in up here smoking or recording
+Up here smoking or recording anyway,
 
 I may as well move my futon and skateboard in.
 
@@ -732,11 +716,11 @@ How can you afford all this? You man are ballin\'.
 
 **KWAME**
 
-Landlady\'s sweet on Ru, sometimes she comes a\'callin.
+Landlady\'s sweet on me, sometimes she comes a\'callin.
 
-More often she drops him a text summoning him,
+More often she drops me a text summoning me,
 
-Like 10 minutes ago when he went off running.
+I go upstairs, come back down, rent\'s sorted by morning.
 
 **TOM**
 
@@ -744,7 +728,7 @@ Penetration for accommodation? Madting.
 
 I guess it beats a studio flat in Acton.
 
-*THERE IS A BRIEF POWER CUT. WHEN THE LIGHTS COME BACK ON, WK IS GONE.*
+*THERE IS A BRIEF POWER CUT. WHEN THE LIGHTS COME BACK ON, WK IS GONE. KWAME IS SITTING WHERE HE WAS.*
 
 **ACT TWO**
 
@@ -772,17 +756,17 @@ We are falling, like the recurring dream that brings
 
 Morning rushing in and cold sweat to my dry skin,
 
-Into pandemonium. Is nothing here real?
+Into pandemonium. The canal holds still.
 
-Dwelling over rotten smoke, black clouds hold ill will.
+Dwelling over rotten smoke, black clouds and ill will.
 
 I need residents of Poet\'s Cemetery
 
-To represent me, at Tolstoy\'s Farm with Ghandi
+To represent me. Gandhi spinning thread
 
-No hand can bring me harm, but without suffering
+At Tolstoy\'s Farm, his hands still clean — not mine.
 
-There\'s no sanctity. Canvases of paintless brushings,
+Without the suffering, the canvas stays unprimed,
 
 Nostalgic for a slow-motion past, filtered fun
 
@@ -790,9 +774,9 @@ Memories more vivid than in pre-production.
 
 On every eyelid an advertisement, tiny
 
-Jewels glued around the brow - proud, playful and shiny.
+Jewels glued around the brow — playful and shiny.
 
-The greatest poets, the ones they still speak about,
+The greatest poets — those they still speak about —
 
 Survived on bread and coffin nails and doubt.
 
@@ -814,25 +798,23 @@ Gods to their apostles, students on their own.
 
 What good's a dictionary to a drowning man?
 
-Intelligence won't save you. Vocabulary can't.
+Intelligence won't save you. Nor will words.
 
 *BEGGAR BELOW THE BRIDGE LAUGHS MANIACALLY*
 
-The laughing beggar bathes below
+Below me laughs the beggar, bathing in
 
-In divineness cast down from the retrograde moon,
+Divinity cast down from the retrograde moon.
 
 Now the water follows the fish and the lambs
 
-Refuse slaughter. The truth defies the lines drawn out
+Refuse slaughter. The truth spills like a broken pipeline
 
-To confine it, spilling like oil from an unpluggable pipeline
-
-To dilute rivers of life-giving water.
+Into the river, and the river keeps moving.
 
 In my dumb presence I\'m as much a supporter
 
-as the fingers that take aim and pull the triggers.
+As the fingers that take aim and pull the triggers.
 
 We clutch to traditions like censoring n\-\-\-\-\-\--.
 
@@ -886,7 +868,7 @@ And guardian witness, send us your pictures
 
 Lists and content and content and lists
 
-Prevalent in a media willing to conceal
+Served up by a media built to conceal
 
 Your little eyes from the real divide
 
@@ -1026,15 +1008,15 @@ Hello Ron.
 
 **TYRESE**
 
-Destiny Vegas sat in her burnished parlour,
+Destiny Vegas — burnished parlour, Liszt
 
-Completely enveloped by Dante\'s Sonata,
+closing out the room, Dante\'s Sonata —
 
 The triumphant close to her favourite stage
 
-Of Liszt\'s masterpiece, Années de Pèlerinage.
+Of Années de Pèlerinage.
 
-A google search tells you her real name is Anna
+A google search yields that your real name is Anna
 
 But in a most typically public school manner
 
@@ -1054,11 +1036,9 @@ She bared her teeth at boardrooms like a balance sheet —
 
 The men saw flesh, the women saw the receipt.
 
-A girl who'd kill a name to build a better one:
+A girl who'd kill a name to build a better one.
 
-For the first time in her life: What should her name be?
-
-Anna Bartholomew isn\'t a celebrity.
+What should it be? Anna Bartholomew isn\'t a celebrity.
 
 **DESTINY**
 
@@ -1088,7 +1068,7 @@ She set out to make the rain fall from the ceiling.
 
 **SCENE THREE - REAL FRIENDS**
 
-*NORAH AND EVANGELINE WALK ARCHWAY ROAD ON THE WAY TO NEVER\'S. IT\'S CARNIVAL, AND THEY ARE COVERED IN GREEN AND GOLD*
+*NORAH AND EVANGELINE WALK ARCHWAY ROAD ON THE WAY TO NEVER\'S. GOOD FRIDAY AFTERNOON.*
 
 **EVANGELINE**
 
@@ -1116,9 +1096,7 @@ You never finished telling me how it ended.
 
 We knew he was a salop, but you pretended
 
-Not to care, unaware of how the ego fares
-
-With betrayal, especially one laid out so bare.
+Not to care. How long did that hold together?
 
 **NORAH**
 
@@ -1140,7 +1118,7 @@ My golden locum tenens was created whole
 
 But programmed with self-destruction codes
 
-Rigged to blow and explode this new soul,
+Rigged to blow this new soul,
 
 Flowing through the original pieces
 
@@ -1190,13 +1168,7 @@ She agreed and they sat on the settee, watching
 
 MTV and from these helpful teacups quaffing
 
-A cocktail of their own green invention; cola, lime
-
-And large quantities of at-hand aqua vitae
-
-Mixed with space oddities and novelty grinders
-
-Filled with plants sometimes used to treat one\'s night blindness.
+Large quantities of at-hand aqua vitae.
 
 C\'est que notre ame, helas! n\'est pas assez hardie.
 
@@ -1206,25 +1178,25 @@ C\'est que notre ame, helas! n\'est pas assez hardie.
 
 **TYRESE**
 
-They only really ventured West for Carnival.
+Norah, Never, Evangeline and Tom
 
-Captain missed his train so they waited one and all,
+Convened at High Street Ken like a search party
 
-Henners repeating lines from Kidulthood at High Street Ken
+Missing the description of whoever they'd lost.
 
-Til Captain arrived at last with Red Stripe and 59 fags.
+Never brought Red Stripe and 59 fags
 
-*THEY ALL WALK TO THE ALBION*
+In a thin blue bag that swung like a censer.
 
-**TYRESE**
+*THEY WALK TO THE ALBION*
 
 Rückenfigur, so called as he never faces
 
-The crowd, was back in Bello for a gig that night.
+The crowd, had a warm-up set before the tour kicked off
 
-This band, overnight sensation Raptors of Vertigo,
+At Sunset. This band, the Raptors of Vertigo,
 
-Occupied most of the pub with their groupies.
+Had packed The Albion out by the time they arrived.
 
 **RUCKENFIGUR**
 
@@ -1414,13 +1386,13 @@ He knew that face. He'd put it in the ground.
 
 **TYRESE**
 
-Next door the plates were still in pieces on the floor.
+Holy Saturday. The glasses were still in pieces on the floor.
 
-Delphine had swept them twice then put the dustpan down,
+Norah had swept them twice then put the dustpan down,
 
-Preferring the evidence. The kitchen smelled of wine
+Preferring the evidence. Yoshikoko\'s room
 
-And something she\'d forgotten she\'d been cooking.
+Smelled of wine and something left unfinished on the stove.
 
 She heard Tom talking to himself through the partition,
 
@@ -1430,7 +1402,7 @@ She turned the radio up and thought of Cosmo,
 
 Then turned it off because every song was his.
 
-*TOM ELIOT-WHITE LIES IN BED. A YOUNGER TOM AND HIS WIFE SIT AT A TABLE UPON WHICH LIES A CHESSBOARD.*
+*IN THE NEXT ROOM, TOM WINDSOR WAKES. A YOUNGER TOM AND HIS WIFE SIT AT A TABLE UPON WHICH LIES A CHESSBOARD.*
 
 **OLDER TOM**
 
@@ -1442,25 +1414,15 @@ I feign disappointment at losing the contest.
 
 Rest peacefully, king, it was either you or me.
 
-Tea for entertainment, gleefully gossiping,
-
-Reading gloom, feeling some superiority.
-
-Bleeding heart, thoughts and prayers, genie out the bottle,
-
-Heathen, we should feed you to the Quetzalcoatl!
-
 **TOM\'S WIFE**
 
 Who will pick up the paper tomorrow morning?
-
-There\'s not really much going on up there, is there?
 
 *YOUNGER TOM AND HIS WIFE ARGUE*
 
 **OLDER TOM**
 
-There\'s nothing down here either, the nether is nought.
+There\'s nothing down here, love, the nether is nought.
 
 Nil points my score, your revision was quite pointless.
 
@@ -1468,13 +1430,7 @@ Nil points my score, your revision was quite pointless.
 
 I wish to give my draft to a better craftsman.
 
-Why are you laughing? I\'m being serious.
-
-You\'re the delirious one, what are you saying?
-
-Hey, where are you going? I\'m talking to you here.
-
-Why must you walk away? Just stay with me and talk.
+You had the hands for it. What happened to your hands?
 
 **OLDER TOM**
 
@@ -1502,25 +1458,11 @@ To free forks five, six feet deep is even hateful.
 
 About last night.
 
-Cosmo, now a marionette of melodies,
-
-Had sought severance from Dilettante endeavors.
-
-Ron, the patriarch of perpetual motion,
-
-Denied his sanctuary, himself a silent prisoner.
-
-Aptly named for his head in the stars,
-
-(That is when it\'s not up his own arse)
-
-Cos enlisted Muggins here to help pull off
+Cos enlisted yours truly to help pull off
 
 The theatrical, international divorce.
 
 We didn't think he'd make Joly join the tour.
-
-Now we\'ve come up with something better than before,
 
 We start with Sunset, and end in Malebolge.
 
@@ -1542,7 +1484,7 @@ Will the meek inherit the earth and curse of fame?
 
 Is there a Norah version that saves you from fate,
 
-Worse am I the only one that lost you to the grave?
+Or am I the only one that lost you to the grave?
 
 I couldn\'t take it, there\'s so much more that I want to say.
 
@@ -1556,7 +1498,7 @@ Let me take on everything with a brave face now.
 
 Let me take the weight of the world in my hands.
 
-Let me bring fear to the molecules of sand.
+Let me bring flowers to the gates that won't give in.
 
 Let me shed a tear for the fight I never fought.
 
@@ -1580,9 +1522,9 @@ I\'m just at the end of this part, won\'t be too long.
 
 Cosmo loved Norah and Norah loved Kingdom Hearts.
 
-She beat her boss battle then they got in the car.
+She beat her boss battle then they got in the car
 
-Now in rhythm section, he held a bass guitar
+And drove to Sunset. Cosmo held a bass guitar
 
 Tightly like protection from the flare of the star,
 
@@ -1636,11 +1578,7 @@ Now I\'m grinning at you with an empty mouth,
 
 Daring you to recognise the smile.
 
-**HENNERS**
-
-Why did we all let it come to this?
-
-Why did we all let it come to this?
+**TOM**
 
 Why did we all let it come to this?
 
@@ -1716,29 +1654,7 @@ Beautiful jackals face-painting Roman numerals
 
 On to their public facades like macabre murals.
 
-Pleasure thrills of the brightly lit streets of Algiers,
-
-Blood, sweat and tears flood, trapped in a mud nap for 12 years.
-
-The streets where we from bred the bad seeds,
-
-Casually made casualties and plaintives of bad tragedies,
-
-Treated more poorly than old Salamano\'s dog.
-
-Growing out of the silence, countless angsty blogs
-
-And pogroms on society\'s highest echelons,
-
-Who feed on the worst sin under the sun:
-
-Creating desire but denying gratification.
-
-False freedom in my eyes, and so I take action.
-
 Now the monomyth is the monolith.
-
-A society\'s priorities lie on the horizon.
 
 In London Town we rest our eyes on
 
@@ -1748,7 +1664,7 @@ Now is the winter of our discontent
 
 Made colder by coin, this son of Satan.
 
-Sound debates unrationalised by fake news,
+Sound debates unrationalised by fictions sold as fact,
 
 Public needs unnationalised by yahoos.
 
