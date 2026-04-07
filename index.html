@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soft Power &mdash; Luke Warrington</title>
+<meta name="description" content="A modern epic poem in ten scenes. Three days in Camden's music underground.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF8F5;
+    --text: #1a1a1a;
+    --muted: #6b6560;
+    --accent: #8B2500;
+    --rule: #d4cfc8;
+    --stage-bg: #f0ede8;
+    --character: #1a1a1a;
+    --serif: 'Cormorant Garamond', 'Georgia', serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1815;
+      --text: #e0dbd4;
+      --muted: #8a8279;
+      --accent: #d4845a;
+      --rule: #3a3530;
+      --stage-bg: #23201b;
+      --character: #e0dbd4;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    line-height: 1.7;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Progress bar ── */
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: var(--accent);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.08s linear;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .hero .author {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero .tagline {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.9;
+    max-width: 24rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero .begin {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 0.65rem 2rem;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .hero .begin:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  .hero .scroll-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rule);
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.9; }
+  }
+
+  /* ── Poem body ── */
+  .poem-body {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 6rem;
+  }
+
+  /* ── Table of contents ── */
+  .toc {
+    padding: 2.5rem 0 3rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2.5rem;
+  }
+
+  .toc h2 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+
+  .toc-act {
+    margin-bottom: 1.4rem;
+  }
+
+  .toc-act-title {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .toc-act ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  .toc-act li {
+    margin-bottom: 0.25rem;
+  }
+
+  .toc-act a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .toc-act a:hover {
+    color: var(--accent);
+  }
+
+  .toc-scene-num {
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    color: var(--muted);
+    margin-right: 0.6rem;
+    display: inline-block;
+    width: 2rem;
+    text-align: right;
+  }
+
+  /* ── Epigraph ── */
+  .epigraph {
+    font-style: italic;
+    color: var(--muted);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  /* ── Act headings ── */
+  .act {
+    text-align: center;
+    padding: 2.5rem 0 0.3rem;
+    margin-top: 3rem;
+  }
+
+  .act h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text);
+  }
+
+  .act-subtitle {
+    text-align: center;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .act-epigraph {
+    font-style: italic;
+    color: var(--muted);
+    text-align: center;
+    padding: 0.5rem 1rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  /* ── Scene headings ── */
+  .scene {
+    margin-top: 2.5rem;
+    margin-bottom: 0.4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .scene h3 {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  /* ── Stage directions ── */
+  .stage {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    padding: 0.6rem 0.9rem;
+    margin: 1rem 0;
+    background: var(--stage-bg);
+    border-radius: 4px;
+    border-left: 2px solid var(--rule);
+  }
+
+  /* ── Character names ── */
+  .character {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 1.6rem;
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+
+  /* ── Verse / dialogue ── */
+  .verse {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .verse p {
+    margin-bottom: 0.6rem;
+  }
+
+  /* ── Inline narration ── */
+  .narration {
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  /* ── Spotlight ── */
+  .spotlight {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 1.2rem 0;
+    text-transform: uppercase;
+  }
+
+  /* ── End block ── */
+  .end-block {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .end-block p {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+
+  /* ── Song / refrain blocks ── */
+  .refrain {
+    text-align: center;
+    font-style: italic;
+    margin: 1.2rem 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  /* ── Scene navigation ── */
+  .scene-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .scene-nav a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .scene-nav a:hover { opacity: 0.7; }
+
+  .scene-nav .nav-prev::before { content: "\2190\00a0"; }
+  .scene-nav .nav-next::after { content: "\00a0\2192"; }
+
+  .scene-nav .nav-center a {
+    color: var(--muted);
+  }
+
+  /* ── Floating TOC button ── */
+  .fab {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 90;
+    pointer-events: none;
+  }
+
+  .fab.visible {
+    opacity: 0.75;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .fab:hover { opacity: 1; }
+
+  /* ── Scene indicator ── */
+  .scene-indicator {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0;
+    transition: opacity 0.4s;
+    z-index: 90;
+    pointer-events: none;
+    background: var(--bg);
+    padding: 0.15rem 0.7rem;
+    border-radius: 2px;
+  }
+
+  .scene-indicator.visible { opacity: 1; }
+
+  /* ── Responsive ── */
+  @media (max-width: 420px) {
+    html { font-size: 16px; }
+    .poem-body { padding: 1.5rem 1rem 5rem; }
+    .hero h1 { font-size: 2.2rem; letter-spacing: 0.16em; }
+  }
+
+  @media (min-width: 768px) {
+    .poem-body { padding: 3rem 2rem 6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progress"></div>
+<div class="scene-indicator" id="scene-indicator"></div>
+
+<div class="hero">
+  <h1>Soft Power</h1>
+  <div class="author">Luke Warrington</div>
+  <div class="tagline">
+    But most of us turn slow to see<br>
+    The figure hanging on a tree<br>
+    And stumble on and blindly grope<br>
+    Upheld by intermittent hope
+  </div>
+  <a href="#toc" class="begin">Enter</a>
+  <div class="scroll-hint">scroll</div>
+</div>
+
+<div class="poem-body">
+
+<nav class="toc" id="toc">
+  <h2>Contents</h2>
+  <div class="toc-act">
+    <div class="toc-act-title">Act One &mdash; Maundy Thursday</div>
+    <ol>
+      <li><span class="toc-scene-num">I</span><a href="#a1s1">Elleh Toledoh</a></li>
+      <li><span class="toc-scene-num">II</span><a href="#a1s2">Mind Rain</a></li>
+      <li><span class="toc-scene-num">III</span><a href="#a1s3">Burial</a></li>
+      <li><span class="toc-scene-num">IV</span><a href="#a1s4">The Joker and the Thief</a></li>
+    </ol>
+  </div>
+  <div class="toc-act">
+    <div class="toc-act-title">Act Two &mdash; Good Friday</div>
+    <ol>
+      <li><span class="toc-scene-num">V</span><a href="#a2s1">The Fire Sermon</a></li>
+      <li><span class="toc-scene-num">VI</span><a href="#a2s2">Portrait of Destiny</a></li>
+      <li><span class="toc-scene-num">VII</span><a href="#a2s3">Real Friends</a></li>
+    </ol>
+  </div>
+  <div class="toc-act">
+    <div class="toc-act-title">Act Three &mdash; Holy Saturday</div>
+    <ol>
+      <li><span class="toc-scene-num">VIII</span><a href="#a3s1">Antigonish</a></li>
+      <li><span class="toc-scene-num">IX</span><a href="#a3s2">The Sympathetic Dead</a></li>
+      <li><span class="toc-scene-num">X</span><a href="#a3s3">The Masque of Anarchy</a></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="epigraph">
+But most of us turn slow to see<br>
+The figure hanging on a tree<br>
+And stumble on and blindly grope<br>
+Upheld by intermittent hope,<br>
+God grant before we die we all<br>
+May see the light as did St. Paul.
+</div>
+
+<div class="act" id="act1"><h2>Act One</h2></div>
+<div class="act-subtitle">Maundy Thursday</div>
+
+<div class="scene" id="a1s1"><h3>Scene One &mdash; Elleh Toledoh</h3></div>
+
+<div class="stage">INT — Sunset Club, Camden. Cosmo's wake party.</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Iced boots and coats defrosted in a hot Sunset,<br>
+A hole on Chalk Farm Road built in an old bunker,<br>
+Acrid mist rising from the blackened wood, beading<br>
+In fat pear-shaped tears resting on the low ceiling.<br>
+Some eyes here he'd met before, some were only types.<br>
+The garden overflow'th with fruit overripe,<br>
+Softening with bitterness, much like this rotten state<br>
+Of mind that he'd been demarcated with of late.<br>
+Appalled but drawn to parricidal decisions,<br>
+Caught in static semantic disposition,</p>
+</div>
+
+<div class="spotlight">Spotlight Joly</div>
+
+<div class="verse">
+<p>Here Joly stands, too scared-stiff to face the jury,<br>
+Clutching empty bottles from a bought-out brewery.<br>
+Thus a crossroads, halfway along Joly life's path.<br>
+A crooked lane through the dark wood, fumbling through farce.<br>
+All roads lead to Rome, but in Sunset the statement<br>
+Rings true moreso for the club's main bar by the gents.<br>
+He'd finished his shy Tokaji far from prying eyes,<br>
+But now with his glass empty and dry, it was time.</p>
+</div>
+
+<div class="stage">Joly stumbles to the bar, resting a hand on a table for stability on the way</div>
+
+<div class="verse">
+<p>Stable hand on the table, said to be favoured<br>
+By Eliot in the 20s, later a blaze<br>
+During a Clash gig razed the whole place to the bones,<br>
+Along with some unfortunate souls some allege<br>
+Never left, haunting the club's dancefloor like disco,<br>
+Anxiously looking above like there's mistletoe.<br>
+The brothers, their relationship at its limits,<br>
+Visit at Cosmo's request and Joly's grimace<br>
+For this generation's version of Sunset's new dawn.<br>
+The spirits mixed with the spirits to raise spirits,</p>
+</div>
+
+<div class="stage">Joly receives his drink from the bar</div>
+
+<div class="verse">
+<p>The likes of which The Dilettantes, their indie band,<br>
+Had never seen, green in the underground mystique,<br>
+Always boldly talking but with nothing to say,<br>
+Now with war stories, they could finally come to play.<br>
+Cosmo, the only one that wanted fame, reclaimed<br>
+His love for art and music and came to disdain<br>
+Everything else, complaining of global constraints<br>
+And paternal servitude, which to Joly's shame<br>
+He couldn't say he felt the same, knowing his place<br>
+And the weight of his name, Dox, in the music space,<br>
+In which he ultimately wanted to remain.<br>
+The producer's attitude could be looser.<br>
+He had bigger problems to fix in any case,<br>
+He had fallen out of love and grace with Delphine,</p>
+</div>
+
+<div class="spotlight">Spotlight Delphine</div>
+
+<div class="verse">
+<p>Five years prior a singer in a 2B band,<br>
+But now his incredibly famous ex-flame.<br>
+She lived in the Camden Square flat with their daughter,<br>
+Estranged isn't even the word, it's much fraughter<br>
+Than that, it's been six weeks since he changed her nappy,<br>
+Joly couldn't be sure if she wore them anymore.<br>
+He wasn't even meant to be out late tonight.</p>
+</div>
+
+<div class="spotlight">Spotlight Dancefloor</div>
+
+<div class="verse">
+<p>Now he shares a dark dance-floor with nocturnal sprites,<br>
+Molochs and angel-headed hipsters, street disciples<br>
+Of a culture found young and lost, loved and reviled.<br>
+It's twelve years since Cos brought him here for the first time,<br>
+Saying he'd met some of the generation's best minds<br>
+Destroyed by madness and absurdity, burdened<br>
+By purposelessness, beholden to urgency,<br>
+Too weak to complete their journey, instead twisting<br>
+Listlessly through miserable purgatory, fists<br>
+Vainly raised towards the Leviathan, lyres<br>
+Strumming melodies aimed at powers dark and light,<br>
+Pleasing to a greensleeved producer such as him,<br>
+Settling at 2B Records, under his father's wing.<br>
+Keen to please the patriarch, he resolved to sign<br>
+Most talented malcontents, how woe betided!<br>
+A mistake he'd never make again, so he thought,<br>
+Until Cosmo's ship never made it in to port.<br>
+They buried his empty grave this April morning<br>
+After 2 weeks in the Port of Spezia trawling.<br>
+The brothers were never close, six years between them,<br>
+Their fraternal love a labour Sisyphean<br>
+Before Cos hit the road like Henry. He wrote<br>
+Joly a parting poem, the least he was owed.</p>
+</div>
+
+<div class="stage">Joly takes out the letter</div>
+
+<span class="character">Cosmo <span style="font-style:italic;font-size:0.85em;letter-spacing:0;text-transform:none;color:var(--muted)">(unseen)</span></span>
+<div class="verse">
+<p>I've left because I wish to live deliberately,<br>
+To front on only the essential facts of life,<br>
+And see if I could not learn only what is taught,<br>
+But realise in death's when I truly come alive.<br>
+Sprung free from our jobs, cars, offices, and taxes,<br>
+Here in the woods, me and Waldo are relaxing.<br>
+We don't work with our hands, we don't walk with our feet,<br>
+Insist upon yourself brother, insist and be free.</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Joly read the letter while waiting for a slash,<br>
+Behind lads on the lash relying on white lines<br>
+To smash with punchlines rehashed from Turkish tombstone<br>
+Teeth smiles flashed at some unimpressed gash in the line.<br>
+A tear wells, like Orson. Prismed, he viewed a friend,<br>
+Tom Eliot-Windsor, waving like no tomorrow.<br>
+Funny hat, shiny pants, half an ounce in his hands,<br>
+Beckoned to the front of the queue, Joly followed.</p>
+</div>
+
+<span class="character">Tom</span>
+<div class="verse">
+<p>You were looking lost out there, old chum. In we go,<br>
+There's a good boy. I know you don't partake per se,<br>
+But Cosmo and I were Colombian brothers,<br>
+So I feel it's only fair in his honour, eh?</p>
+</div>
+
+<div class="stage">Joly and Tom do lines</div>
+
+<div class="verse">
+<p>I mean we had the same charlie plug, Dante.<br>
+In fact, I thought that the whole event was "catered"<br>
+Because somebody bought him clean out last weekend,<br>
+I almost made the mistake of not bringing any.</p>
+</div>
+
+<div class="stage">An angry bouncer knocks on the door</div>
+
+<span class="character">Tom</span>
+<div class="verse">
+<p>We're having sex, fuck off. Are you finishing that?</p>
+</div>
+
+
+<div class="scene-nav">
+  <span></span>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a1s2" class="nav-next">Mind Rain</a>
+</div>
+
+<div class="scene" id="a1s2"><h3>Scene Two &mdash; Mind Rain</h3></div>
+
+<div class="stage">INT — Eurostar Standard Premium carriage. Norah Healy lounges in her seat with her naked feet on the seat in front of hers, messily eating a sausage roll. The man in the seat next to her is an unwilling participant in their conversation.</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>They should really extend the Eurostar worldwide.<br>
+It's the best way to travel.</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse narration">
+<p>She could tell this guy really wanted to read his free copy of the Economist.</p>
+</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>Have you taken your girlfriend to Paris before?</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse narration">
+<p>She already knew he didn't have a girlfriend, having found him on Facebook from the name on his ticket within 30 seconds of him sitting down.</p>
+</div>
+
+<span class="character">Chump</span>
+<div class="verse">
+<p>It wouldn't work anyway, your plan. It's called the Eurostar, it would be confusing for people if it went all over the world.</p>
+</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>The Northern line goes to South London dipshit, do people get confused by that?</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>In the violet hour<br>
+60 feet under la Manche<br>
+She could almost taste Dover.<br>
+Hyacinths and a sausage roll<br>
+From Gare de Nord<br>
+chug chug chug<br>
+Norah Healy was in good spirits<br>
+Complementary in Standard Premium</p>
+</div>
+
+<span class="character">Girls</span>
+<div class="refrain">
+Dansons la capucine,<br>
+Y'a pas de pain chez nous,<br>
+Y'en a chez la voisine<br>
+Mais ce n'est pas pour nous
+</div>
+
+<div class="verse">
+<p>Forever bound to you, as the ancient saying goes.<br>
+We held hands that August night down Rue de la Harpe<br>
+(Possibly before it changed its name)<br>
+Talking at length about our dreams.<br>
+The words you said I couldn't say the same back.<br>
+Forever will it take me to forget<br>
+Your flash-flood tears of practised anguish<br>
+That crashed silently into an oyster shell,<br>
+Before parting ways and wishing well.<br>
+That's the thing about good intentions,<br>
+They perform the job of paving stones.<br>
+Our hotel had sorts of cool inventions,<br>
+A tad pretentious for my tastes but it came highly recommended<br>
+By one of your wet mates from Rugby or Cambridge.<br>
+Forever shall I question my choices,<br>
+But how long will this monster stay voiceless?<br>
+Wrapped up in red and yellow tape,<br>
+Hell-bent on an exit, praying for a saviour.<br>
+A tell-tale sign of malaise when we don't<br>
+Talk of rain because we've come to expect it.<br>
+A long winter of mishaps and setbacks<br>
+Trilled with flashes and hot spells,<br>
+So you don't forgot how that feels.<br>
+The type of winter that makes you consider<br>
+Whether there's anything keeping you here<br>
+For the rest of your pertinent years.<br>
+Is it folly to believe that hollow trees<br>
+Should uproot and change locations?<br>
+I was waiting in the lobby with some carnations<br>
+Preparing to update my status when you entered.<br>
+You popped back to the office to meet Patrick<br>
+And thought I was still shopping in the spot<br>
+With the black and white film posters. I was not.<br>
+You're no Cecil Northcote Parkinson, big shot,<br>
+I'm not a resource you can delegate.<br>
+Disbelieving glances at your wristwatch,<br>
+You're at a complete loss, she must be late.<br>
+Seeing your mistress for the first time<br>
+Reminded me of seeing your porn history,<br>
+It both mystified and humoured me.<br>
+I knew you weren't the love I was seeking and<br>
+You threw me that ring while your ship was leaking,<br>
+That I would soon be leaving, but this twist<br>
+Came sooner than even my most pessimistic<br>
+Line of thinking, I'm kind of impressed.</p>
+</div>
+
+<div class="refrain">
+Dansons la capucine,<br>
+Y'a pas de vin chez nous,<br>
+Y'en a chez la voisine<br>
+Mais ce n'est pas pour nous
+</div>
+
+<div class="verse">
+<p>We smoked a fatty on the walk back from<br>
+Montmartre to your flat in Batignolles,<br>
+I'm normally nervous on a first date<br>
+But there was something in the laidback way<br>
+You pulled it out and gave it to me<br>
+That I found impossible to turn away.<br>
+Two-ply the streets were trying to walk through<br>
+In rush hour swelled with Asian tour groups<br>
+Who pause to preserve every twist and turn<br>
+Of the Seine to pretend to their friends<br>
+That they saw more of Paris than them.<br>
+You told me you knew every road in town,<br>
+Where to breakfast, lunch and dine like locals,<br>
+Which unfiltered cigarettes I should smoke<br>
+And what folk I should avoid late night<br>
+(Generally anybody with shaved heads,<br>
+Long dreads or offerers of narcotics,<br>
+Which in hindsight is ironic as it's<br>
+The only advice that was correct).<br>
+Something poetic about a December exit<br>
+After a sunny summery entrance.<br>
+I left and was struggling to comprehend<br>
+What had just happened and if it's too soon to text.<br>
+Even now I find it hard to explain,<br>
+I don't know the French for walk of shame.</p>
+</div>
+
+<div class="refrain">
+Dansons la capucine<br>
+Ya de plasire chez nous<br>
+On pleure chez la voisine<br>
+On rire toujours chez nous
+</div>
+
+<div class="verse">
+<p>For every word I write another<br>
+Seeks to follow, my pencil presses red hot<br>
+Lead devouring paper and traversing<br>
+Lines printed to marginalise content.<br>
+Here's the rub Prince, I'm going back to England.<br>
+Our union was brief and now it's ended.<br>
+There's nothing left to say, ring's in the safe,<br>
+I've been trying to give it back since September.<br>
+Don't think you've hurt me, I'm impervious,<br>
+From my very earliest memories<br>
+I've only been afraid of purgatory<br>
+And equivalent permanent inertia,<br>
+Returning to the curbed suburbs of Surbiton.<br>
+I've heard the girls, now it's Pluto Shervington,<br>
+Lord! Anybody see my trial? Grief for I.<br>
+Why judge, I was badly beaten, found by<br>
+Loved ones, battered by an irate husband,<br>
+Searching for a man that was not I.<br>
+Your honour was presented fraudulently.<br>
+Your humour is offensive, not the good way.<br>
+Dieu soit loué, I finally know now<br>
+I must excise this bloated growth,<br>
+This ghastly Esthesioneuroblastoma.<br>
+Choose to disappear into my own night<br>
+on the tail of dear Chantal Sébire,<br>
+Before I lose my five senses<br>
+Forever, farewell.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a1s1" class="nav-prev">Elleh Toledoh</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a1s3" class="nav-next">Burial</a>
+</div>
+
+<div class="scene" id="a1s3"><h3>Scene Three &mdash; Burial</h3></div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Vegan Abattoir ground to a halt mid-encore,<br>
+Delphine's last note still wet on the monitors.<br>
+Joly palmed his way out through the fire escape<br>
+To cold air and a ukulele on the kerb,<br>
+Matchbook in the headstock, The Albion on the sleeve.</p>
+</div>
+
+<span class="character">Yoshikoko</span>
+<div class="verse">
+<p>I go to a place<br>
+When I'm allowed<br>
+It is close to me<br>
+Four parcels away<br>
+I am an orator<br>
+I compare our worlds<br>
+I know it left you<br>
+But it's still with me<br>
+I'm glad that you got free<br>
+Happy for your daughter<br>
+I wish for that as well<br>
+Flowing like that water<br>
+Playing in the gutter<br>
+Slipping to grey canals<br>
+Brain soft as butter<br>
+Fruit of our ancestoral<br>
+Mystic quest, inner eye<br>
+Apple of a gemini<br>
+Indescribed alliteri<br>
+お願いします, ください</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>He pocketed the matchbook. She didn't stop playing.</p>
+</div>
+
+<div class="stage">Inside, the monitors crackle</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>Never trust the quiet ones, the upper lip is brutal,<br>
+Resistance is futile, the shit is institutional.<br>
+Sold the Crown Jewels off, sold the Camden Hells,<br>
+They rally round the family with a pocket full of shells.<br>
+There's nowhere that you can hide, we invented genocide,<br>
+Take your treasures where you can't see 'em, locked inside the British Museum.<br>
+Three lions on the chest, imported from Africa,<br>
+Classical society is really more Der Klassiker.<br>
+I knew some dilettantes, pretty boys with daddy's backing,<br>
+Signed the silverware and called the looting A&amp;R.<br>
+Buried an empty box then wept at their own acting,<br>
+Took the flowers home and charged them to the star.</p>
+</div>
+
+<span class="character">Joly</span>
+<div class="verse">
+<p>Mask off. Fucking mask off. Take the fucking mask off.</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Delphine's hand on his chest, her rings cold through the shirt.</p>
+</div>
+
+<span class="character">Delphine</span>
+<div class="verse">
+<p>Jolyon, please calm down. Let's go and talk over there.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a1s2" class="nav-prev">Mind Rain</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a1s4" class="nav-next">The Joker and the Thief</a>
+</div>
+
+<div class="scene" id="a1s4"><h3>Scene Four &mdash; The Joker and the Thief</h3></div>
+
+<div class="stage">INT — Kwame's kitchen. WK and Kwame read each other lyrics. Tom Eliot-White looks around and takes cocaine.</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>A guest in my own reality, tormented<br>
+By my covered coffin deep in the back garden<br>
+And its primal urge to grow. Had I repented<br>
+(For my sins) he might have granted me a pardon,<br>
+But now the cat's out of the box, we'll never know.<br>
+Can one divide life's prestige by the physical?<br>
+Has the soul evolved to mere vestige? Heaven's no!<br>
+I can't forget that he was the original<br>
+And I the facsimile, god to my prophet<br>
+But a class beneath. I've won against nothingness<br>
+By borrowing from my binary opposite<br>
+And between Heaven and Hell we found consensus,<br>
+To each party a half-life, different loves and<br>
+Private values but unified when on display.<br>
+Unperturbed by uncertainty, eventually<br>
+Unobserved we both will be scorched or decay.</p>
+</div>
+
+<span class="character">Kwame</span>
+<div class="verse">
+<p>Deeply imprinted in children of influence<br>
+Lives a conviction carved from continuance.<br>
+Even in crystalis, gods in the embryo,<br>
+Pampered in champers, peppered in prep school.<br>
+Wimpy and charming, in love with their fathers,<br>
+Rather than argue they force nervous laughter.<br>
+After all A-stars they depart to pater's alma mater,<br>
+Smarter than half the class but no one talks faster.<br>
+Hard is the battle so bravado takes charge.<br>
+So long they walked this path, so long it lasts.</p>
+</div>
+
+<span class="character">Tom</span>
+<div class="verse">
+<p>The legendary sword of Damocles hangs heavy<br>
+Over a Politics, Philosophy and Economics degree.</p>
+</div>
+
+<span class="character">Kwame</span>
+<div class="verse">
+<p>Logically a high proportion of these so-called<br>
+Thought-leaders lead us, some others tap our phone-calls.<br>
+That was my future, but I had no more path to follow.<br>
+Neither protocol was adequate, no pill that I could swallow.<br>
+I failed a stress test and my consciousness went stage left.<br>
+The next step, I quit uni and Oxford in the same breath.<br>
+That night I found an open mic and wrecked bars.<br>
+Rufie saw and said I was a for-sure born star,<br>
+He took me out to his sports car in the car park<br>
+And brought along two hardcore pornstars in sports bras.<br>
+Well, not for long… we partied all fortnight and more,<br>
+Then when he asked me to move in here I said sure,<br>
+I'm always in up here smoking or recording<br>
+I may as well move my futon and skateboard in.</p>
+</div>
+
+<span class="character">Tom</span>
+<div class="verse">
+<p>How can you afford all this? You man are ballin'.</p>
+</div>
+
+<span class="character">Kwame</span>
+<div class="verse">
+<p>Landlady's sweet on Ru, sometimes she comes a'callin.<br>
+More often she drops him a text summoning him,<br>
+Like 10 minutes ago when he went off running.</p>
+</div>
+
+<span class="character">Tom</span>
+<div class="verse">
+<p>Penetration for accommodation? Madting.<br>
+I guess it beats a studio flat in Acton.</p>
+</div>
+
+<div class="stage">There is a brief power cut. When the lights come back on, WK is gone.</div>
+
+
+<div class="scene-nav">
+  <a href="#a1s3" class="nav-prev">Burial</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a2s1" class="nav-next">The Fire Sermon</a>
+</div>
+
+<div class="act" id="act2"><h2>Act Two</h2></div>
+<div class="act-subtitle">Good Friday</div>
+
+<div class="act-epigraph">
+Midway upon the journey of our life, I found myself in a dark wilderness, for I had wandered from the straight and true.
+</div>
+
+
+<div class="scene" id="a2s1"><h3>Scene Five &mdash; The Fire Sermon</h3></div>
+
+<div class="stage">Joly stumbles out of Sunset with a bottle of vodka then walks down the Camden Canal muttering to himself and drinking.</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Dawn close, Sunset closed and spat characters like phlegm<br>
+Out onto the streets, night stars their resurrection.<br>
+Joly wallowed with bottle by a bridge and waxed<br>
+Lyrical about two things he couldn't buy back.</p>
+</div>
+
+<div class="stage">Joly stops by a bridge</div>
+
+<span class="character">Joly</span>
+<div class="verse">
+<p>We are falling, like the recurring dream that brings<br>
+Morning rushing in and cold sweat to my dry skin,<br>
+Into pandemonium. Is nothing here real?<br>
+Dwelling over rotten smoke, black clouds hold ill will.<br>
+I need residents of Poet's Cemetery<br>
+To represent me, at Tolstoy's Farm with Ghandi<br>
+No hand can bring me harm, but without suffering<br>
+There's no sanctity. Canvases of paintless brushings,<br>
+Nostalgic for a slow-motion past, filtered fun<br>
+Memories more vivid than in pre-production.<br>
+On every eyelid an advertisement, tiny<br>
+Jewels glued around the brow — proud, playful and shiny.<br>
+The greatest poets, the ones they still speak about<br>
+Live eternal like worshipped deities, devout<br>
+Followers finding fresh focus, freed from fatal<br>
+Inertia and banal versions of stale fables,<br>
+Stable tales and hailed babies. In worldplay surfs rise<br>
+To merchants. The gentry are landed, for turned eyes<br>
+a peerage and three letters for your loyalty.<br>
+Some proles master prose and ascend above royalty,<br>
+Gods in realities of their apostles<br>
+But mere students in their own, now dirty fossils.<br>
+Is expertise not mastery of thesaurus<br>
+and dictionary? Intelligence withdraws us from savagery,<br>
+Vocabulary from blindness.</p>
+</div>
+
+<div class="stage">Beggar below the bridge laughs maniacally</div>
+
+<div class="verse">
+<p>The laughing beggar bathes below<br>
+In divineness cast down from the retrograde moon,<br>
+Now the water follows the fish and the lambs<br>
+Refuse slaughter. The truth defies the lines drawn out<br>
+To confine it, spilling like oil from an unpluggable pipeline<br>
+To dilute rivers of life-giving water.<br>
+In my dumb presence I'm as much a supporter<br>
+as the fingers that take aim and pull the triggers.<br>
+We clutch to traditions like censoring n———.<br>
+The century turned and we were warned of the Triumph<br>
+Of Bullshit, decades later they banned Naked Lunch,<br>
+Ulysses, Howl, Animal Farm and Brave New World.<br>
+Would Cosmo be alive if I'd understood his words?<br>
+Good grief, it seems that I've been reaping what I sowed.<br>
+Born alone, die alone, I'm living what they wrote.</p>
+</div>
+
+<div class="stage">Joly drains bottle</div>
+
+<div class="verse">
+<p>No more chipped-tooth smiles to serpents, time is urgent<br>
+But there's solace in reality's divergence.<br>
+From shoulders of Atlas to wrinkled infant hands,<br>
+We watch this world end with a whimper, not a bang.<br>
+This is the way the world ends<br>
+This is the way the world ends<br>
+This is the way the world ends</p>
+</div>
+
+<div class="stage">Joly smashes bottle and sets off home</div>
+
+<span class="character">Beggar <span style="font-style:italic;font-size:0.85em;letter-spacing:0;text-transform:none;color:var(--muted)">(reading a newspaper)</span></span>
+<div class="verse">
+<p>Politics and lists and a feminism quiz<br>
+And cats and lists and funny little pics<br>
+And long form short form, see you in court form<br>
+Burkas and hooks and selling your books<br>
+French merger, hostile bid, who cares who owns the kids<br>
+And lots more lists, don't look at these tits<br>
+But look at this ass and look Farage<br>
+And guardian witness, send us your pictures<br>
+Lists and content and content and lists<br>
+Prevalent in a media willing to conceal<br>
+Your little eyes from the real divide<br>
+It's black and white underground but we gotta mind the gap<br>
+Between us and those living in the sky<br>
+The landscape has been scarred by the shard<br>
+In its shadow the discarded share a minutes silence<br>
+The only thing I need the man's help to buy<br>
+Is some time to get off this fucking island.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a1s4" class="nav-prev">The Joker and the Thief</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a2s2" class="nav-next">Portrait of Destiny</a>
+</div>
+
+<div class="scene" id="a2s2"><h3>Scene Six &mdash; Portrait of Destiny</h3></div>
+
+<div class="stage">Ron and Joly are in Ron's gaudy office. Joly is hungover and looking lifeless in a chair. Ron is at his desk drinking whiskey and looking out of the window.</div>
+
+<span class="character">Ron</span>
+<div class="verse">
+<p>I feel no guilt, neither should you my firstborn son.<br>
+This month has been too cruel, I seek the snow once more.<br>
+Cosmo's request was heavy and his solution<br>
+saline as his darkened tomb on the ocean floor,<br>
+intended to render our potable water<br>
+unpalatable in each mouthful and nausea<br>
+inducing, as if I'd lost a daughter.<br>
+I see through his final disappointing demand.<br>
+I feel no guilt, less than his first disappearance<br>
+or his return home with earrings aged fifteen.<br>
+By severest words and schemes he never redeemed,<br>
+therehence spiritual abandonment of my child<br>
+gave rise, I'll admit to that.<br>
+I lament each passing year your mother wrote<br>
+"Excuse my dust" on her gravestone.<br>
+Eventually adjacent, mine shall instead<br>
+demand fear in all living producers of testosterone.<br>
+I feel no guilt. O ye men who dwell in streets<br>
+of Lacedemon! O this night, alack alack alack!<br>
+Reports from Jerusalem that the city<br>
+which had taken the whole world was sacked.<br>
+Regard Alaric, son of Rothesteus.<br>
+Would I remain recalcitrant as Sabbas<br>
+and fill my lungs with Danubian water<br>
+to meet glorious saints in the Bastille,<br>
+drunk on liberty and enthusiasm?<br>
+I say Non, sire, c'est une revolution,<br>
+what doesn't kill one only makes one stronger,<br>
+so close your mouth and perform your ablutions<br>
+The Lady's not the only one for turning<br>
+but now that's the only solution, so the crowd<br>
+believes on the streets of Lutetia and Mamucium.<br>
+I don't think this time we will be saved by praying,<br>
+My stock market maven explained<br>
+We could be taken over in the next few months,</p>
+</div>
+
+<div class="stage">Ron gets up</div>
+
+<div class="verse">
+<p>No. Not months. She's buying us out by Monday.<br>
+Son, I'm not losing this fucking company.<br>
+Go get a new band and make me some fucking money.<br>
+I hate to point out it was all milk and honey<br>
+Before I hired you, now I'm fucked royally.<br>
+To honour Cosmo's death, this tour is all it will take,<br>
+While making a huge difference to the existence<br>
+of the family business.<br>
+Any questions, son? Bare in mind I'm not giving you an option,<br>
+if at first you don't succeed, show some persistence.</p>
+</div>
+
+<span class="character">Joly</span>
+<div class="verse">
+<p>Just the one. Have you always been this deluded<br>
+Or is it something seasonal, like the gout?<br>
+She's buying us by Monday and your plan is sign<br>
+A band that don't exist, won't show their faces,<br>
+Never play the same song twice, and do it for<br>
+My dead brother? I'm going to Eliza's.<br>
+Don't ring me tonight, I won't pick up.</p>
+</div>
+
+<div class="stage">Joly leaves. Ron's phone rings.</div>
+
+<span class="character">Ron</span>
+<div class="verse"><p>What? Put them through.</p></div>
+
+<span class="character">Destiny</span>
+<div class="verse"><p>Hello Ron.</p></div>
+
+<div class="stage">Cut to Destiny</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Destiny Vegas sat in her burnished parlour,<br>
+Completely enveloped by Dante's Sonata,<br>
+The triumphant close to her favourite stage<br>
+Of Liszt's masterpiece, Années de Pèlerinage.<br>
+A google search tells you her real name is Anna<br>
+But in a most typically public school manner<br>
+Her Channing classmates used Bartholomew, although<br>
+Her doting parents called her Annie at home<br>
+Until too soon she had grown into something<br>
+That they no longer understood and feared, teeming<br>
+With teenage self-confidence and juvenile dread,<br>
+Peering through the looming glass ceiling overhead<br>
+Into cloudy darkened dooms some two or three,<br>
+Smiling at all those situations yet unseen,<br>
+Baring white cleavage, legs, soul and teeth at faces<br>
+Uncaring when viewed from the cold nether places.<br>
+Her schism's nominative self-determinism.<br>
+When the day finally came to make the decision<br>
+For the first time in her life: What should her name be?<br>
+Anna Bartholomew isn't a celebrity.</p>
+</div>
+
+<span class="character">Destiny</span>
+<div class="verse">
+<p>How will I make them remember me?<br>
+What's my name?<br>
+Though I should have been somebody else long before,<br>
+On the ocean floor is the hermit crab reborn.</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Destiny Manifest sits necking straight absinthe,<br>
+Measuring out her life with a silver teaspoon.<br>
+In whispering coolness begins young nature's play,<br>
+Stirring Spring phenomena an obvious muse.<br>
+She took advantage of the height of her shoes and<br>
+Snuck a look above the parapet, amused by<br>
+Competitors unwilling to get their feet wet,<br>
+She knew to reap success she'd have to use her mind,<br>
+As well as her other more saleable assets.<br>
+Her internal attic dressed with some Robert Greene<br>
+And her sparse wardrobe with yet sparser new outfits,<br>
+She set out to make the rain fall from the ceiling.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a2s1" class="nav-prev">The Fire Sermon</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a2s3" class="nav-next">Real Friends</a>
+</div>
+
+<div class="scene" id="a2s3"><h3>Scene Seven &mdash; Real Friends</h3></div>
+
+<div class="stage">Norah and Evangeline walk Archway Road on the way to Never's. It's Carnival, and they are covered in green and gold.</div>
+
+<span class="character">Evangeline</span>
+<div class="verse">
+<p>My star has fallen, I am a supernova<br>
+Lighting the path for those as yet unexploded.<br>
+Thrice my understudy has received my roses,<br>
+Walked my stage, I'm fucking cosplayed by ospreys.</p>
+</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>Men tend die or disappoint, Evangeline.<br>
+Yours are gone too, you'll forget them eventually.<br>
+The second I tear Cosmo's face from my thoughts<br>
+He shuttles back and forth, like a badminton court.</p>
+</div>
+
+<span class="character">Evangeline</span>
+<div class="verse">
+<p>You never finished telling me how it ended.<br>
+We knew he was a salop, but you pretended<br>
+Not to care, unaware of how the ego fares<br>
+With betrayal, especially one laid out so bare.</p>
+</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>I found it calming for my mental state<br>
+To co-habitate with a depressant,<br>
+Augmenting this social experiment<br>
+By inventing an alias identity<br>
+That surrogated all my pain for me,<br>
+While my true personality hibernated<br>
+Within my psyche, complete but fragmented.<br>
+My golden locum tenens was created whole<br>
+But programmed with self-destruction codes<br>
+Rigged to blow and explode this new soul,<br>
+Flowing through the original pieces<br>
+With the effect of connecting and gilting,<br>
+Improving the whole just as kintsugi<br>
+Renews a disintegrated ricebowl.</p>
+</div>
+
+<div class="stage">They reach Captain Never's</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>She gave the bell a ring, found it was still working,<br>
+Waited grinning at her imperfect offering<br>
+Then rushed headlong into the welcoming embrace<br>
+Of Captain Never, ever her fidus Achates.</p>
+</div>
+
+<span class="character">Norah</span>
+<div class="verse"><p>What have you been doing?</p></div>
+
+<span class="character">Never</span>
+<div class="verse">
+<p>You know me. Nevering.<br>
+They're clearing out the building, new owners want it empty.<br>
+Come in so we can catch up properly, old friend.<br>
+It's so good to see you again! I won't pretend<br>
+I wasn't crushed when you left but I understood,<br>
+If that happened to me then I'm not sure I could<br>
+Forgive and forget, but as you know I've always<br>
+Been a slave to regret. Next time call me, okay?</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>She agreed and they sat on the settee, watching<br>
+MTV and from these helpful teacups quaffing<br>
+A cocktail of their own green invention; cola, lime<br>
+And large quantities of at-hand aqua vitae<br>
+Mixed with space oddities and novelty grinders<br>
+Filled with plants sometimes used to treat one's night blindness.<br>
+C'est que notre ame, helas! n'est pas assez hardie.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a2s2" class="nav-prev">Portrait of Destiny</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a3s1" class="nav-next">Antigonish</a>
+</div>
+
+<div class="act" id="act3"><h2>Act Three</h2></div>
+<div class="act-subtitle">Holy Saturday</div>
+
+
+<div class="scene" id="a3s1"><h3>Scene Eight &mdash; Antigonish</h3></div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>They only really ventured West for Carnival.<br>
+Captain missed his train so they waited one and all,<br>
+Henners repeating lines from Kidulthood at High Street Ken<br>
+Til Captain arrived at last with Red Stripe and 59 fags.</p>
+</div>
+
+<div class="stage">They all walk to The Albion</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Rückenfigur, so called as he never faces<br>
+The crowd, was back in Bello for a gig that night.<br>
+This band, overnight sensation Raptors of Vertigo,<br>
+Occupied most of the pub with their groupies.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>They call it L'Etranger In Algeria.<br>
+Self-improvement is merely clothed masturbation.<br>
+Self-destruction is clearly the path to true salvation.</p>
+</div>
+
+<div class="stage">Bootsy, the proprietor, arrives from somewhere reciting a limerick</div>
+
+<span class="character">Bootsy</span>
+<div class="verse">
+<p>There was a queer chap from Bohemia<br>
+A poor victim of hypoxyphilia<br>
+He wanted the chop<br>
+But Suzanne was no cop<br>
+On reflection it would have been easier.</p>
+
+<p>The lino still holds her shape in the kitchen,<br>
+A silhouette of Shiraz where she finished.<br>
+I scrubbed it for a month then put a rug down,<br>
+Then took the rug up cos I missed her.<br>
+They sent me down for supply, Huck took the stand<br>
+And swore blind I was somewhere I wasn't.<br>
+Eighteen months I owed him for that performance,<br>
+Paid it back in product, interest included.<br>
+Now I pour for poets and pull pints for pricks<br>
+And the till don't ring as often as it should.<br>
+But nobody dies on these premises twice.<br>
+Touch wood.</p>
+</div>
+
+<div class="stage">WK returns with a girl and introduces her to Rückenfigur</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>This is Hannah, went to art class with Eliza,<br>
+She's a part-time model and a mortgage adviser<br>
+Who claims to have never even heard of the Raptors!<br>
+I say we should wow her and leave her in raptures.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>Forever scratching pen on a pad so maybe one day fire starts catching,<br>
+so maybe one day I can start relaxing<br>
+A nervous mind of a kind that isn't kind towards inaction.</p>
+</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>Factor in a fraction of my faction eat the porridge by the bowl,<br>
+The rest are unemployed, wanted, bailed or on parole.<br>
+Last week we had a party right, a friends send off night,<br>
+We partied 25 hours then we bruised his eyes.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>We do the right things but started on the bottom aisle,<br>
+So now there's no surprise that our prize is mercantile.<br>
+You'd better revise your attitude before I really get mad at you,<br>
+I've had it dude, I'm throwing bows, better tell the dentist to be expecting you.</p>
+</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>Call the dentist bitch, make an appointment quick,<br>
+Cos I'm coming for your ass and I never miss,<br>
+Put an MC down like an anesthetist,<br>
+You're gonna need to call work and take of a week or six.<br>
+I'm like a water man, I'm in a fluid state.<br>
+My chi's bang in line, I feel really great.<br>
+Have you had a goji berry? Man the shit's bananas,<br>
+Harder than the hiragana, katakana and the kanji.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>Shot two, living in the city it's too hot to<br>
+Find out who shot you, Roboto or Mugatu.<br>
+Too true to handle, you got blue sandals<br>
+And 16 candles in the Sistine Chapel.<br>
+Vandalize headlines, compromise deadlines<br>
+Crossing over red lines and small t's, dotting i's.<br>
+Higher than a Swanton, twisting like a wanton,<br>
+Chandon by the bottle to throttle thoughts of mans gone.</p>
+</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>Where's the lady in the van gone?<br>
+Camden Council got no leg to stand on.<br>
+Random mandem handing round ounces in the shards<br>
+Of glass placed in hearts of darkness, en garde!<br>
+Swiped right too hard, I might have to charge,<br>
+Bars shut early Sunday, so who got the free yard for us to rest in?<br>
+Two twos a two for two,<br>
+If Bossman blesses with wings, perfection.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>Toss my best bredrin the steel protection,<br>
+Got the best deal on some real Smith and Westons.<br>
+Copped the receipt from the dealer's receptionist,<br>
+Buyer's remorse is the worst when it's corpses.</p>
+</div>
+
+<span class="character">WK</span>
+<div class="verse">
+<p>Divorced from the truth, our reality's groupies,<br>
+A fuck thing, a screw fix, a blow toy, a chew piece.<br>
+Corrupted contortions of usual suspects,<br>
+For up here, my success is nothing.</p>
+</div>
+
+<span class="character">Rückenfigur</span>
+<div class="verse">
+<p>I'm a villain in my aspect, thinking of the casket,<br>
+Criminal mindset, shrinking violet.<br>
+Swilling the decanter, drinking in the banter,<br>
+Sitting in the gastro, spitting fully gassed flows.</p>
+</div>
+
+<div class="stage">WK and Hannah go and have sex somewhere.<br><br>Joly, holding the book of matches from Yoshikoko, comes through the door. He is immediately face-to-face with Rückenfigur, who turns and walks away.<br><br>Joly follows and grabs his arm. Rückenfigur punches him in the face.<br><br>Joly hits him in the face with a chair.<br><br>His mask is removed, revealing his brother, Cosmo, missing all his front teeth.</div>
+
+
+<div class="scene-nav">
+  <a href="#a2s3" class="nav-prev">Real Friends</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a3s2" class="nav-next">The Sympathetic Dead</a>
+</div>
+
+<div class="scene" id="a3s2"><h3>Scene Nine &mdash; The Sympathetic Dead</h3></div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Next door the plates were still in pieces on the floor.<br>
+Delphine had swept them twice then put the dustpan down,<br>
+Preferring the evidence. The kitchen smelled of wine<br>
+And something she'd forgotten she'd been cooking.<br>
+She heard Tom talking to himself through the partition,<br>
+Two voices, one of them younger than the other.<br>
+She turned the radio up and thought of Cosmo,<br>
+Then turned it off because every song was his.</p>
+</div>
+
+<div class="stage">Tom Eliot-White lies in bed. A younger Tom and his wife sit at a table upon which lies a chessboard.</div>
+
+<span class="character">Older Tom</span>
+<div class="verse">
+<p>The ivory men make company between us.<br>
+You celebrate a Pyrrhic victory wildly,<br>
+I feign disappointment at losing the contest.<br>
+Rest peacefully, king, it was either you or me.<br>
+Tea for entertainment, gleefully gossiping,<br>
+Reading gloom, feeling some superiority.<br>
+Bleeding heart, thoughts and prayers, genie out the bottle,<br>
+Heathen, we should feed you to the Quetzalcoatl!</p>
+</div>
+
+<span class="character">Tom's Wife</span>
+<div class="verse">
+<p>Who will pick up the paper tomorrow morning?<br>
+There's not really much going on up there, is there?</p>
+</div>
+
+<div class="stage">Younger Tom and his wife argue</div>
+
+<span class="character">Older Tom</span>
+<div class="verse">
+<p>There's nothing down here either, the nether is nought.<br>
+Nil points my score, your revision was quite pointless.</p>
+</div>
+
+<span class="character">Younger Tom</span>
+<div class="verse">
+<p>I wish to give my draft to a better craftsman.<br>
+Why are you laughing? I'm being serious.<br>
+You're the delirious one, what are you saying?<br>
+Hey, where are you going? I'm talking to you here.<br>
+Why must you walk away? Just stay with me and talk.</p>
+</div>
+
+<span class="character">Older Tom</span>
+<div class="verse">
+<p>Cheese and chalk, a fraught painting on the wall. Later,<br>
+A rainy afternoon, the grey like charged static<br>
+Electricity at a low, constant voltage,<br>
+Charging the atmosphere with a diluted suspense<br>
+And numbing the subconscious, mine is blindfolded.<br>
+Hints of hue in the charred coal, internal conflict<br>
+Breaking like Barcola through my defensive line,<br>
+Wry smiles to myself as I throw thorned white roses<br>
+At the target of your eyes, now forever closed.<br>
+Parked on the hard shoulder, I retired my role,<br>
+Green tie was brazen for the occasion but bold,<br>
+I curse not tasteful outfit, but outcome. Once in,<br>
+To free forks five, six feet deep is even hateful.</p>
+</div>
+
+<span class="character">Older Tom <span style="font-style:italic;font-size:0.85em;letter-spacing:0;text-transform:none;color:var(--muted)">(to audience)</span></span>
+<div class="verse">
+<p>About last night.<br>
+Cosmo, now a marionette of melodies,<br>
+Had sought severance from Dilettante endeavors.<br>
+Ron, the patriarch of perpetual motion,<br>
+Denied his sanctuary, himself a silent prisoner.<br>
+Aptly named for his head in the stars,<br>
+(That is when it's not up his own arse)<br>
+Cos enlisted Muggins here to help pull off<br>
+The theatrical, international divorce.<br>
+We didn't think he'd make Joly to the tour,<br>
+Maybe that we should have considered that thought.<br>
+Now we've come up with something better than before,<br>
+We start with Sunset, and end in Malebolge.</p>
+</div>
+
+<div class="stage">Tom goes next door to Cosmo's room.<br><br>Lying in bed, Norah reads the eulogy she wrote for Cosmo's funeral.</div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>Now in your eternal stillness, do you see different?<br>
+Do you have infinite wisdom and know all the secrets?<br>
+Is there beauty and uniqueness in all God's creatures?<br>
+Do you know Jesus? Is Inception's end a dream sequence?<br>
+Will the meek inherit the earth and curse of fame?<br>
+Is there a Norah version that saves you from fate,<br>
+Worse am I the only one that lost you to the grave?<br>
+I couldn't take it, there's so much more that I want to say.<br>
+First I thought you were bluffing but still you're not here,<br>
+I don't blame you, sometimes this world's too much to bare.<br>
+You saw so much suffering, let me take the pain now.<br>
+Let me take on everything with a brave face now.<br>
+Let me take the weight of the world in my hands.<br>
+Let me bring fear to the molecules of sand.<br>
+Let me shed a tear for the fight I never fought.<br>
+Let my head clear and unlearn what I've been taught.</p>
+</div>
+
+<span class="character">Cosmo</span>
+<div class="verse"><p>It's beautiful, Norah. I'm sorry it was fake.</p></div>
+
+<span class="character">Norah</span>
+<div class="verse">
+<p>You're so much nicer now that you're a dead person.<br>
+Your existence here was heavy, I'm glad it's gone.<br>
+Is there time before we go to play Kingdom Hearts?<br>
+I'm just at the end of this part, won't be too long.</p>
+</div>
+
+<span class="character">Tyrese</span>
+<div class="verse">
+<p>Cosmo loved Norah and Norah loved Kingdom Hearts.<br>
+She beat her boss battle then they got in the car.<br>
+Now in rhythm section, he held a bass guitar<br>
+Tightly like protection from the flare of the star,<br>
+Now sat in the passenger, his older brother's<br>
+Passage to the fore, he's not passive anymore,<br>
+Something matters in his core, for the first time<br>
+Since the divorce, that much about Joly is for sure.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a3s1" class="nav-prev">Antigonish</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <a href="#a3s3" class="nav-next">The Masque of Anarchy</a>
+</div>
+
+<div class="scene" id="a3s3"><h3>Scene Ten &mdash; The Masque of Anarchy</h3></div>
+
+<div class="stage">INT — Sunset. The new band play the opening gig of their tour.</div>
+
+<span class="character">Cosmo</span>
+<div class="verse">
+<p>I drowned in April, water took the sting out,<br>
+Spezia swallowed every password that I owned.<br>
+No login for the dead, no inbox, no analytics,<br>
+Just salt and wood and months of letting go.<br>
+You lot wear your faces like a lanyard,<br>
+Swiping in and out of every lit-up room,<br>
+Performing for the aperture, the lens cap<br>
+On your hearts, exposure set to bloom and consume.<br>
+I burned mine at the waterline and floated,<br>
+Nameless in the undertow, devoted<br>
+To the absence, to the beautiful unquoted<br>
+Life that starts when every account is closed.<br>
+Soft power is the hand that rocks the cradle<br>
+And the grave, the algorithm lullaby.<br>
+I wore the mask so long I lost my teeth to it,<br>
+Now I'm grinning at you with an empty mouth,<br>
+Daring you to recognise the smile.</p>
+</div>
+
+<span class="character">Henners</span>
+<div class="verse">
+<p>Why did we all let it come to this?<br>
+Why did we all let it come to this?<br>
+Why did we all let it come to this?<br>
+Why did we all let it come to this?<br>
+Why did we all let it come to this?<br>
+Why did we all let it come to this?</p>
+</div>
+
+<span class="character">Joly</span>
+<div class="verse">
+<p>I drink the way my father talks, in rounds,<br>
+One for the nerves, one for the shame, one for the sound<br>
+Of nothing in a house where no one's home by ten,<br>
+I'm pouring doubles into single measures of a man.<br>
+My old man built the label off the back of broken artists,<br>
+I built nothing off the back of him, I'm harvest<br>
+From a vineyard that he planted just to watch the rot,<br>
+He looks at me and sees the vintage that he's not.<br>
+I held my brother's coffin knowing there was nothing in it,<br>
+Shouldered all that empty weight and didn't flinch,<br>
+I've been carrying nothing my entire life and calling it a living,<br>
+The pallbearer with no body and no witness.<br>
+I'm not a rapper and I'm not my brother's keeper<br>
+And I'm not my father's heir tonight, I'm evidence<br>
+That something grows in soil that was never meant for planting,<br>
+So I'm gonna let it out before it puts me in the ground.</p>
+</div>
+
+<div class="stage">Cosmo signals for the music to stop</div>
+
+<span class="character">Cosmo</span>
+<div class="verse">
+<p>Faces wholly beshrouded in red-dyed dowlas,<br>
+Baseless holy growlings like Howl on laughing gas.<br>
+Ephemeral performances unetherised,<br>
+Everyone knew they were part of "History",<br>
+Besides the reformed deceased, they know fame is misery.<br>
+We mourn them ceaselessly, the sewers of livery,<br>
+Playing to gaunt hands and cerebral thought police,<br>
+On trial for obscenities, lovers of free speech.<br>
+Surge too fast and catch chills in the church, go too slow it's heatstroke.<br>
+Either way one's for it, this we know<br>
+But the urge to purge for weddings and funerals<br>
+Keeps us fainting-fit til we crumple like rag dolls,<br>
+Beautiful jackals face-painting Roman numerals<br>
+On to their public facades like macabre murals.<br>
+Pleasure thrills of the brightly lit streets of Algiers,<br>
+Blood, sweat and tears flood, trapped in a mud nap for 12 years.<br>
+The streets where we from bred the bad seeds,<br>
+Casually made casualties and plaintives of bad tragedies,<br>
+Treated more poorly than old Salamano's dog.<br>
+Growing out of the silence, countless angsty blogs<br>
+And pogroms on society's highest echelons,<br>
+Who feed on the worst sin under the sun:<br>
+Creating desire but denying gratification.<br>
+False freedom in my eyes, and so I take action.<br>
+Now the monomyth is the monolith.<br>
+A society's priorities lie on the horizon.<br>
+In London Town we rest our eyes on<br>
+A Gherkin, a Walkie-talkie, a Shard and a prison.<br>
+Now is the winter of our discontent<br>
+Made colder by coin, this son of Satan.<br>
+Sound debates unrationalised by fake news,<br>
+Public needs unnationalised by yahoos.<br>
+Behind the wool masque is a blank face like yours.<br>
+No fate is insurmountable, but I still stay unaccountable.<br>
+They fear the Red Death so I wear it to chill them,<br>
+Addicted to killing, illimitable dominion.<br>
+Slack screengrabs from snapchat<br>
+Ping back Macs and apps attack<br>
+By hacking cracked whatsapps<br>
+To find alternative facts, stat.<br>
+Cashed in rehashed weapon caches,<br>
+Handed to rash lads to smash Daesh,<br>
+Then in a flashbang reframe narrative,<br>
+Dispatch the harriers and turn them to ash.<br>
+Earn your repast and slash the ruling classes.<br>
+Murder your past and depart to new parts.<br>
+I offer a new start, an antidote to 'sanity'.<br>
+To those that asked, I grant a counterpart reality.</p>
+</div>
+
+<div class="stage">Cosmo removes his mask</div>
+
+<div class="stage">Some of you know the purpose of your presence here tonight, some are caught blindsided. In a moment we shall hand round a solution, so those who choose to join us shall suffer no sickness in transit.</div>
+
+<div class="stage">Petrol canisters are brought on stage with bottles of vodka</div>
+
+<div class="stage">Those that wish to stay may drink too, but it may hasten your combustion. There's not much left to say but that it's better to burn out in an ecstasy of joy and rage than fade away in the eternal raptures of vertigo.</div>
+
+<div class="stage">Petrol is poured on stage and around the building</div>
+
+<span class="character">Cosmo</span>
+<div class="verse">
+<p>We flee this arid plain and set our lands in order. Represent. Shantih.</p>
+</div>
+
+
+<div class="scene-nav">
+  <a href="#a3s2" class="nav-prev">The Sympathetic Dead</a>
+  <span class="nav-center"><a href="#toc">Contents</a></span>
+  <span></span>
+</div>
+
+<div class="end-block">
+<p>Screams</p>
+<p style="margin-top:1.5rem;font-size:0.85rem;">The End</p>
+</div>
+
+</div>
+
+<button class="fab" id="fab" aria-label="Back to contents">TOC</button>
+
+<script>
+(function() {
+  var progress = document.getElementById('progress');
+  var indicator = document.getElementById('scene-indicator');
+  var fab = document.getElementById('fab');
+  var scenes = document.querySelectorAll('.scene');
+  var hero = document.querySelector('.hero');
+
+  fab.addEventListener('click', function() {
+    document.getElementById('toc').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progress.style.width = pct + '%';
+
+        var pastHero = scrollTop > (hero ? hero.offsetHeight * 0.5 : 300);
+        fab.classList.toggle('visible', pastHero);
+
+        var current = '';
+        for (var i = 0; i < scenes.length; i++) {
+          if (scenes[i].getBoundingClientRect().top < window.innerHeight * 0.3) {
+            var h3 = scenes[i].querySelector('h3');
+            if (h3) current = h3.textContent;
+          }
+        }
+
+        if (current && pastHero) {
+          indicator.textContent = current;
+          indicator.classList.add('visible');
+        } else {
+          indicator.classList.remove('visible');
+        }
+
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
