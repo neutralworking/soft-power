@@ -44,6 +44,8 @@ In fat pear-shaped tears resting on the low ceiling.
 
 Some eyes here he\'d met before, some were only types.
 
+By the fire exit, stilettos too high for a wake.
+
 The garden overflow\'th with fruit overripe,
 
 Softening with bitterness, much like this rotten state
