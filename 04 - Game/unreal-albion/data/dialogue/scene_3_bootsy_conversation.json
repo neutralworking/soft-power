@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "id": "scene_3_bootsy_conversation",
+    "title": "Bootsy Conversation",
+    "description": "Bootsy offers grounding wisdom at the bar. The only person here not performing.",
+    "location": "The Albion — Bar Area",
+    "time": "Night",
+    "entry_node": "bootsy_opening"
+  },
+  "nodes": [
+    {
+      "id": "bootsy_opening",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "calm",
+      "text": "You do not have to become the loudest version of yourself just because the room is hard of hearing.",
+      "next": "bootsy_choice"
+    },
+    {
+      "id": "bootsy_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "You got anything wise and devastating for free?",
+          "costs": {},
+          "rewards": {},
+          "stat_effects": { "ego": 1 },
+          "set_flags": { "bootsy_support": true },
+          "next": "bootsy_wise_response"
+        },
+        {
+          "text": "You putting me up or am I haunting decorative corners all night?",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "bootsy_soft_intro": true },
+          "next": "bootsy_corner_response"
+        },
+        {
+          "text": "Who should I avoid?",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "warned": true },
+          "next": "bootsy_warning_response"
+        },
+        {
+          "text": "What does this place do to people?",
+          "costs": {},
+          "rewards": {},
+          "set_flags": {},
+          "next": "bootsy_place_response"
+        }
+      ]
+    },
+    {
+      "id": "bootsy_wise_response",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "warm",
+      "text": "Free? Nothing's free. But here — this one's underpriced: the room doesn't care about your past. It only cares about the next four minutes. So make them count and stop rehearsing your apology.",
+      "next": "bootsy_wise_exit"
+    },
+    {
+      "id": "bootsy_wise_exit",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "steady",
+      "text": "Now go. Before I start charging.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "bootsy_corner_response",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "amused",
+      "text": "I've put you on the list. Not the good list. The list that means you're tolerated pending evidence of usefulness.",
+      "next": "bootsy_corner_exit"
+    },
+    {
+      "id": "bootsy_corner_exit",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "knowing",
+      "text": "The bar's open. The stage is later. Everything between now and then is your problem.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "bootsy_warning_response",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "serious",
+      "text": "The one smiling like they've already renamed you, and the one glaring like they preferred the earlier draft.",
+      "next": "bootsy_warning_exit"
+    },
+    {
+      "id": "bootsy_warning_exit",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "neutral",
+      "text": "Everyone else is just scenery with opinions. You'll be fine as long as you remember which one you are.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "bootsy_place_response",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "reflective",
+      "text": "Same thing every room does. It offers them a louder costume and waits to see if they thank it.",
+      "next": "bootsy_place_exit"
+    },
+    {
+      "id": "bootsy_place_exit",
+      "type": "line",
+      "speaker": "bootsy",
+      "portrait_mood": "gentle",
+      "text": "The trick is knowing the difference between the costume and the skin. Most people here stopped checking years ago.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "end_conversation",
+      "type": "end"
+    }
+  ]
+}

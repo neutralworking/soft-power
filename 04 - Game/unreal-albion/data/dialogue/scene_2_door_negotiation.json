@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "id": "scene_2_door_negotiation",
+    "title": "Door Negotiation",
+    "description": "Mara Flint at the door of The Albion. Getting in is the first test.",
+    "location": "The Albion — Entrance",
+    "time": "Night",
+    "entry_node": "mara_opening"
+  },
+  "nodes": [
+    {
+      "id": "mara_opening",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "appraising",
+      "text": "You playing, guesting, or hoping the room invents a reason for you to be here?",
+      "next": "door_choice"
+    },
+    {
+      "id": "door_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "I'm expected.",
+          "costs": { "attention": 2 },
+          "rewards": {},
+          "set_flags": { "entered_flashy": true },
+          "next": "mara_expected_response"
+        },
+        {
+          "text": "Texts got crossed. I'm with Jules.",
+          "costs": { "creativity": 1 },
+          "rewards": {},
+          "set_flags": {},
+          "next": "mara_jules_branch"
+        },
+        {
+          "text": "I can wait.",
+          "costs": {},
+          "rewards": {},
+          "stat_effects": { "ego": -1 },
+          "set_flags": { "waited_outside": true },
+          "next": "mara_wait_response"
+        },
+        {
+          "text": "Bootsy knows me.",
+          "conditions": [{ "flag": "messaged_mara", "value": true }],
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "bootsy_soft_intro": true },
+          "next": "mara_bootsy_response"
+        }
+      ]
+    },
+    {
+      "id": "mara_expected_response",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "skeptical",
+      "text": "Expected by whom? The room doesn't send invitations. It sends rumours and sees who shows up dressed for them.",
+      "next": "mara_expected_relent"
+    },
+    {
+      "id": "mara_expected_relent",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "neutral",
+      "text": "Fine. You've got the posture for it. Don't make me regret reading your coat instead of your name.",
+      "next": "exit_branch"
+    },
+    {
+      "id": "mara_jules_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "creativity", "min": 3 },
+          "next": "mara_jules_success"
+        }
+      ],
+      "default": "mara_jules_fail"
+    },
+    {
+      "id": "mara_jules_success",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "amused",
+      "text": "Jules is already three drinks into pretending tonight matters. Go find him before he starts quoting himself.",
+      "next": "exit_branch"
+    },
+    {
+      "id": "mara_jules_fail",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "flat",
+      "text": "Jules didn't mention you. But Jules doesn't mention most things until they become anecdotes. In you go. Quietly.",
+      "stat_effects": { "ego": -1 },
+      "next": "exit_branch"
+    },
+    {
+      "id": "mara_wait_response",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "softened",
+      "text": "Patience. That's either dignity or a very convincing impression of it. Alright. Stand over there. I'll find a gap.",
+      "next": "mara_wait_letthrough"
+    },
+    {
+      "id": "mara_wait_letthrough",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Seven minutes. Two cigarettes from strangers you don't smoke. Then Mara nods you through without looking up.",
+      "next": "exit_branch"
+    },
+    {
+      "id": "mara_bootsy_response",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "knowing",
+      "text": "Bootsy knows everyone. That's his whole thing. But he did mention you might turn up looking like you weren't sure. So — consistent, at least.",
+      "next": "exit_branch"
+    },
+    {
+      "id": "exit_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "attention", "min": 4 },
+          "next": "exit_high_attention"
+        },
+        {
+          "check": { "flag": "quiet_entry", "value": true },
+          "next": "exit_quiet"
+        },
+        {
+          "check": { "flag": "waited_outside", "value": true },
+          "next": "exit_quiet"
+        }
+      ],
+      "default": "exit_default"
+    },
+    {
+      "id": "exit_high_attention",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "impressed",
+      "text": "Right. You're the one people are already talking about.",
+      "next": "enter_albion"
+    },
+    {
+      "id": "exit_quiet",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "dry",
+      "text": "Try not to become tonight's administrative problem.",
+      "next": "enter_albion"
+    },
+    {
+      "id": "exit_default",
+      "type": "line",
+      "speaker": "mara_flint",
+      "portrait_mood": "neutral",
+      "text": "Mara steps aside. Not warmly. Not coldly. With the precise indifference of someone who has seen four hundred people walk through this door and remembers maybe six.",
+      "next": "enter_albion"
+    },
+    {
+      "id": "enter_albion",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The bass hits you in the sternum before your eyes adjust. The Albion is full.",
+      "next": "end_scene"
+    },
+    {
+      "id": "end_scene",
+      "type": "end",
+      "trigger_scene_change": "albion_main_room"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "meta": {
+    "id": "scene_6_endings",
+    "title": "Endings",
+    "description": "Three ending variants based on accumulated choices and stats.",
+    "location": "The Albion — Various",
+    "time": "Night, late / Early morning",
+    "entry_node": "ending_branch"
+  },
+  "nodes": [
+    {
+      "id": "ending_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "ego", "max": 0 },
+          "next": "fold_opening"
+        },
+        {
+          "check": { "flag": "accepted_token", "value": true },
+          "next": "compromise_check"
+        }
+      ],
+      "default": "breakthrough_check"
+    },
+    {
+      "id": "breakthrough_check",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "flag": "viv_exposed", "value": true },
+          "next": "breakthrough_ego_check"
+        },
+        {
+          "check": { "flag": "bootsy_support", "value": true },
+          "next": "breakthrough_ego_check"
+        }
+      ],
+      "default": "compromise_opening"
+    },
+    {
+      "id": "breakthrough_ego_check",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "ego", "min": 1 },
+          "next": "breakthrough_opening"
+        }
+      ],
+      "default": "fold_opening"
+    },
+    {
+      "id": "breakthrough_opening",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The last note hangs in the room like a question nobody wants to answer first. Then — not applause. Something before applause. An electric quiet. The room holding its breath because letting it go means it's over.",
+      "next": "breakthrough_crowd"
+    },
+    {
+      "id": "breakthrough_crowd",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Then the noise comes. Not polite noise. Not industry noise. The real thing — chaotic, overlapping, someone at the back shouting something you can't parse but can feel.",
+      "next": "breakthrough_phone"
+    },
+    {
+      "id": "breakthrough_phone",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Your phone lights up. Three messages. Five. Eleven. People who weren't here describing what it felt like to people who were, and getting it exactly wrong in exactly the right way.",
+      "next": "breakthrough_final"
+    },
+    {
+      "id": "breakthrough_final",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The room says your name like it has found a use for it. You leave before it can decide the price.",
+      "next": "end_breakthrough"
+    },
+    {
+      "id": "end_breakthrough",
+      "type": "end"
+    },
+    {
+      "id": "compromise_check",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "flag": "viv_exposed", "value": true },
+          "next": "breakthrough_ego_check"
+        }
+      ],
+      "default": "compromise_opening"
+    },
+    {
+      "id": "compromise_opening",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The set ends. The applause is real enough — professional, measured, the kind that comes with a business card attached. Someone near the sound desk nods in a way that means something to someone.",
+      "next": "compromise_viv"
+    },
+    {
+      "id": "compromise_viv",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "satisfied",
+      "text": "Good. That can travel. We'll clean up the framing, obviously, but the core is there.",
+      "next": "compromise_corridor"
+    },
+    {
+      "id": "compromise_corridor",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "She finds you in the back corridor. The drink in her hand is for you. The contract in her tone is for her.",
+      "next": "compromise_viv_followup"
+    },
+    {
+      "id": "compromise_viv_followup",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "warm_professional",
+      "text": "I'll send you something Monday. Nothing binding. Just a shape. You'll like the shape.",
+      "next": "compromise_final"
+    },
+    {
+      "id": "compromise_final",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Congratulations arrives in the language of ownership.",
+      "next": "end_compromise"
+    },
+    {
+      "id": "end_compromise",
+      "type": "end"
+    },
+    {
+      "id": "fold_opening",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The set ends and nobody pretends it didn't happen. It happened. It was fine. Fine is the temperature at which ambition becomes room temperature.",
+      "next": "fold_water"
+    },
+    {
+      "id": "fold_water",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Someone hands you a glass of water backstage. Not unkindly. The way you hand water to someone who has just been very brave about something that didn't require bravery.",
+      "next": "fold_someone"
+    },
+    {
+      "id": "fold_someone",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "\"You did the smart thing,\" someone says. You will never find out who. It is the kind of compliment that arrives without a return address.",
+      "next": "fold_final"
+    },
+    {
+      "id": "fold_final",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "By midnight, everyone agrees you finally seem serious.",
+      "next": "end_fold"
+    },
+    {
+      "id": "end_fold",
+      "type": "end"
+    }
+  ]
+}

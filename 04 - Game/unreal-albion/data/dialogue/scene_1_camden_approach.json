@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "id": "scene_1_camden_approach",
+    "title": "Camden Approach",
+    "description": "Camden street at night walking to The Albion. Three interactables then first choice.",
+    "location": "Camden High Street",
+    "time": "Night",
+    "entry_node": "start"
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Camden after dark. Rain on posters. Bass through brick. Someone has already said your name tonight, and you haven't opened your mouth once.",
+      "next": "reflection_branch"
+    },
+    {
+      "id": "reflection_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "ego", "min": 4 },
+          "next": "reflection_ego"
+        },
+        {
+          "check": { "stat": "creativity", "min": 4 },
+          "next": "reflection_creativity"
+        },
+        {
+          "check": { "stat": "attention", "min": 4 },
+          "next": "reflection_attention"
+        }
+      ],
+      "default": "reflection_ego"
+    },
+    {
+      "id": "reflection_ego",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "reflective",
+      "text": "You can still turn around. Nothing has happened yet. That is the mercy.",
+      "internal": true,
+      "next": "poster_inspect"
+    },
+    {
+      "id": "reflection_creativity",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "wry",
+      "text": "No, look at that — the whole street is already framing you. Neon, puddle, silhouette. If this goes badly, at least it'll be cinematic.",
+      "internal": true,
+      "next": "poster_inspect"
+    },
+    {
+      "id": "reflection_attention",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "guarded",
+      "text": "Check posture. Check coat. Check face. The first audience is always the glass.",
+      "internal": true,
+      "next": "poster_inspect"
+    },
+    {
+      "id": "poster_inspect",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "neutral",
+      "text": "No guest name listed. Which means if you get in, you still don't exist. Not officially.",
+      "internal": true,
+      "next": "phone_inspect_1"
+    },
+    {
+      "id": "phone_inspect_1",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Three notifications. A missed call from a number you deleted but still recognise.",
+      "next": "phone_inspect_2"
+    },
+    {
+      "id": "phone_inspect_2",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "A text from Ash: 'Door's Mara tonight. Be nice or be interesting. Not both.'",
+      "next": "phone_inspect_3"
+    },
+    {
+      "id": "phone_inspect_3",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "An industry newsletter you subscribed to drunk and now can't unsubscribe from sober.",
+      "next": "first_choice"
+    },
+    {
+      "id": "first_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "Post a teaser clip",
+          "costs": {},
+          "rewards": { "attention": 2 },
+          "set_flags": { "prebuzz": true },
+          "next": "choice_post_response"
+        },
+        {
+          "text": "Message Mara at the door",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "messaged_mara": true },
+          "next": "choice_mara_response"
+        },
+        {
+          "text": "Keep your head down",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "quiet_entry": true },
+          "next": "choice_quiet_response"
+        }
+      ]
+    },
+    {
+      "id": "choice_post_response",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Twelve seconds of you walking. No caption. The algorithm will do the captioning.",
+      "next": "approach_end"
+    },
+    {
+      "id": "choice_mara_response",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Sent. Read receipt instant. No reply. Which is either very good or the kind of bad that announces itself later.",
+      "next": "approach_end"
+    },
+    {
+      "id": "choice_quiet_response",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Hood up. Hands in pockets. The street doesn't notice. That used to bother you.",
+      "next": "approach_end"
+    },
+    {
+      "id": "approach_end",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Attention travels faster than bodies.",
+      "next": "end_scene"
+    },
+    {
+      "id": "end_scene",
+      "type": "end",
+      "trigger_scene_change": "door_negotiation"
+    }
+  ]
+}
