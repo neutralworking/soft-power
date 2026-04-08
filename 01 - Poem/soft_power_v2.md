@@ -92,7 +92,7 @@ The likes of which The Dilettantes, their indie band,
 
 Had never seen, green in the underground mystique,
 
-Always rehearsing lines they'd never get to play,
+Always rehearsing lines they'd never get to say,
 
 Now with war stories, they could finally come to play.
 
@@ -116,7 +116,7 @@ She lived in the Camden Square flat with their daughter,
 
 He'd drifted so far out to Bermudan waters,
 
-Six weeks since he'd last changed her — did she still wear them?
+Six weeks since he'd changed her nappy — did she still wear them?
 
 He wasn\'t even meant to be out late tonight.
 
