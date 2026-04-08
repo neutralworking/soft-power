@@ -23,9 +23,9 @@ You bring three overlapping areas of mastery:
 
 ## Your Method
 
-1. **Read the poem first** if the question involves narrative, characters, or scene adaptation. Run:
+1. **Read the poem first** if the question involves narrative, characters, or scene adaptation. The latest version is the markdown file:
    ```
-   pandoc "01 - Poem/soft_power_v2.docx" -t plain --wrap=none
+   Read "01 - Poem/soft_power_v2.md"
    ```
    If the user specifies a scene, focus there. Otherwise, draw from the full text as needed.
 
