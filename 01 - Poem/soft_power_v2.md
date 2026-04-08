@@ -424,16 +424,6 @@ You pulled it out and gave it to me
 
 That I found impossible to turn away.
 
-Two-ply the streets were trying to walk through
-
-In rush hour swelled with Asian tour groups
-
-Who pause to preserve every twist and turn
-
-Of the Seine to pretend to their friends
-
-That they saw more of Paris than them.
-
 You told me you knew every road in town,
 
 Where to breakfast, lunch and dine like locals,
@@ -490,11 +480,9 @@ Don\'t think you\'ve hurt me, I\'m impervious,
 
 From my very earliest memories
 
-I\'ve only been afraid of purgatory
+I\'ve only been afraid of purgatory —
 
-And equivalent permanent inertia,
-
-Returning to the curbed suburbs of Surbiton.
+The curbed suburbs of Surbiton.
 
 I\'ve heard the girls, now it\'s Pluto Shervington,
 
