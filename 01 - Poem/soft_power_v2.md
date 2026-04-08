@@ -1082,7 +1082,9 @@ He shuttles back and forth, like a badminton court.
 
 **EVANGELINE**
 
-You never finished telling me how it ended.
+Somebody's buying Ron's label, did you hear?
+
+Destiny Vegas. You never finished telling me how it ended.
 
 We knew he was a salop, but you pretended
 
@@ -1510,6 +1512,8 @@ I\'m just at the end of this part, won\'t be too long.
 
 **TYRESE**
 
+*(This is what you asked for, Destiny.)*
+
 Cosmo loved Norah and Norah loved Kingdom Hearts.
 
 She beat her boss battle then they got in the car
@@ -1700,6 +1704,8 @@ We flee this arid plain and set our lands in order. Represent. Shantih.
 
 SCREAMS
 
-*That's not what I asked you.*
+**DESTINY**
 
-*Again, from the beginning.*
+That's not what I asked you.
+
+Again, from the beginning.
