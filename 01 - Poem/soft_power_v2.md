@@ -66,10 +66,6 @@ Thus a crossroads, halfway along Joly\'s life\'s path.
 
 A crooked lane through the dark wood, fumbling through farce.
 
-All roads lead to Rome, but in Sunset the statement
-
-Rings true moreso for the club\'s main bar by the gents.
-
 He\'d finished his shy Tokaji far from prying eyes,
 
 But now with his glass empty and dry, it was time.
@@ -84,15 +80,9 @@ During a Clash gig razed the whole place to the bones,
 
 Along with some unfortunate souls some allege
 
-Never left, haunting the club\'s dancefloor like disco,
+Never left, haunting the club\'s dancefloor like disco.
 
-Anxiously looking above like there\'s mistletoe.
-
-The brothers, their relationship at its limits,
-
-Visit at Cosmo\'s request and Joly\'s grimace
-
-For this generation\'s version of Sunset\'s new dawn.
+The brothers came at Cosmo\'s request, Joly\'s grimace.
 
 The spirits mixed with the spirits to raise spirits,
 
@@ -106,23 +96,13 @@ Always rehearsing lines they'd never get to play,
 
 Now with war stories, they could finally come to play.
 
-Cosmo, the only one that wanted fame, reclaimed
+Cosmo alone had craved the fame, reclaimed
 
-His love for art and music and came to disdain
+His art and learned to disdain the family name.
 
-Everything else, complaining of global constraints
+While Joly, knowing his place in the music space,
 
-And paternal servitude, which to Joly\'s shame
-
-He couldn\'t say he felt the same, knowing his place
-
-And the weight of his name, Dox, in the music space,
-
-In which he ultimately wanted to remain.
-
-His collar tight, his playlist even tighter.
-
-He had bigger problems to fix in any case,
+Kept his collar tight, his playlist even tighter.
 
 He had fallen out of love and grace with Delphine,
 
@@ -134,11 +114,9 @@ But now a face on every bus on Chalk Farm Road.
 
 She lived in the Camden Square flat with their daughter,
 
-He'd drifted so far out to Bermudan waters
+He'd drifted so far out to Bermudan waters,
 
-It's been six weeks since he changed her nappy,
-
-Joly couldn\'t be sure if she wore them anymore.
+Six weeks since he'd last changed her — did she still wear them?
 
 He wasn\'t even meant to be out late tonight.
 
@@ -456,7 +434,7 @@ I don\'t know the French for walk of shame.
 
 Dansons la capucine
 
-Y\'a du plaisir chez nous
+Y'a du plaisir chez nous
 
 On pleure chez la voisine
 

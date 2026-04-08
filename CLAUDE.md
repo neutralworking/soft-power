@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **The poem is a loop.** The ending feeds back into the opening line. The cast fake their deaths; the narrator reconstructs the last three days.
 
-The definitive text is **SOFT POWER - DRAFT MANUSCRIPT V1.pdf** (August 2024). The earlier "Objective-C or Relative" format is superseded.
+The working text is **01 - Poem/soft_power_v2.md** (markdown, editable). The docx version (`soft_power_v2.docx`) is kept for export/print but the markdown is the source of truth. The earlier V1 PDF and "Objective-C or Relative" format are superseded.
 
 ## Repository Structure
 
