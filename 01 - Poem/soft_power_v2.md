@@ -1082,9 +1082,9 @@ He shuttles back and forth, like a badminton court.
 
 **EVANGELINE**
 
-Somebody's buying Ron's label, did you hear?
+Ron's label's gone, some Destiny Vegas bought it.
 
-Destiny Vegas. You never finished telling me how it ended.
+Anyway. You never finished telling me how it ended.
 
 We knew he was a salop, but you pretended
 
