@@ -8,17 +8,17 @@ const StatBarScene := preload("res://ui/hud/stat_bar.tscn")
 
 
 func _ready() -> void:
-	# Anchor top-left with 20px margin
+	# Anchor top, full width for portrait mobile
 	anchor_left = 0.0
 	anchor_top = 0.0
-	anchor_right = 0.0
+	anchor_right = 1.0
 	anchor_bottom = 0.0
-	offset_left = 20
-	offset_top = 20
-	offset_right = 300
-	offset_bottom = 120
+	offset_left = 16
+	offset_top = 16
+	offset_right = -16
+	offset_bottom = 180
 
-	add_theme_constant_override("separation", 4)
+	add_theme_constant_override("separation", 6)
 
 	# Create stat bars
 	ego_bar = StatBarScene.instantiate()

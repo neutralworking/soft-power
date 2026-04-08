@@ -19,20 +19,21 @@ func _ready() -> void:
 	# Build child nodes
 	icon_rect = TextureRect.new()
 	icon_rect.name = "Icon"
-	icon_rect.custom_minimum_size = Vector2(32, 32)
+	icon_rect.custom_minimum_size = Vector2(40, 40)
 	icon_rect.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	add_child(icon_rect)
 
 	name_label = Label.new()
 	name_label.name = "Label"
 	name_label.text = stat_name.capitalize()
-	name_label.custom_minimum_size = Vector2(100, 0)
+	name_label.custom_minimum_size = Vector2(120, 0)
 	name_label.add_theme_color_override("font_color", Color("#e0dbd4"))
+	name_label.add_theme_font_size_override("font_size", 28)
 	add_child(name_label)
 
 	bar = ProgressBar.new()
 	bar.name = "Bar"
-	bar.custom_minimum_size = Vector2(150, 24)
+	bar.custom_minimum_size = Vector2(200, 36)
 	bar.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	bar.show_percentage = false
 	add_child(bar)
@@ -57,9 +58,10 @@ func _ready() -> void:
 
 	value_label = Label.new()
 	value_label.name = "ValueLabel"
-	value_label.custom_minimum_size = Vector2(50, 0)
+	value_label.custom_minimum_size = Vector2(70, 0)
 	value_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
 	value_label.add_theme_color_override("font_color", Color("#e0dbd4"))
+	value_label.add_theme_font_size_override("font_size", 28)
 	add_child(value_label)
 
 	# Add spacing

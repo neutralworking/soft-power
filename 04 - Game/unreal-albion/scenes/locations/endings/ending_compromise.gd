@@ -27,12 +27,12 @@ func _ready() -> void:
 
 	label = RichTextLabel.new()
 	label.bbcode_enabled = true
-	label.set_anchors_preset(Control.PRESET_CENTER)
-	label.offset_left = -500
-	label.offset_right = 500
-	label.offset_top = -200
-	label.offset_bottom = 200
-	label.add_theme_font_size_override("normal_font_size", 26)
+	label.set_anchors_preset(Control.PRESET_FULL_RECT)
+	label.offset_left = 40
+	label.offset_right = -40
+	label.offset_top = 200
+	label.offset_bottom = -100
+	label.add_theme_font_size_override("normal_font_size", 32)
 	label.add_theme_color_override("default_color", Color("#e0dbd4"))
 	ui.add_child(label)
 

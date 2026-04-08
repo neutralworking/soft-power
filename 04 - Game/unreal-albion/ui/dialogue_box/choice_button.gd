@@ -25,10 +25,10 @@ func _ready() -> void:
 	panel_style.corner_radius_top_right = 4
 	panel_style.corner_radius_bottom_left = 4
 	panel_style.corner_radius_bottom_right = 4
-	panel_style.content_margin_left = 12
-	panel_style.content_margin_right = 12
-	panel_style.content_margin_top = 8
-	panel_style.content_margin_bottom = 8
+	panel_style.content_margin_left = 16
+	panel_style.content_margin_right = 16
+	panel_style.content_margin_top = 14
+	panel_style.content_margin_bottom = 14
 	add_theme_stylebox_override("panel", panel_style)
 
 	hbox = HBoxContainer.new()
@@ -40,17 +40,20 @@ func _ready() -> void:
 	choice_text.name = "ChoiceText"
 	choice_text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	choice_text.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	choice_text.add_theme_font_size_override("font_size", 26)
 	hbox.add_child(choice_text)
 
 	cost_tag = Label.new()
 	cost_tag.name = "CostTag"
 	cost_tag.add_theme_color_override("font_color", COLOR_ACCENT)
+	cost_tag.add_theme_font_size_override("font_size", 22)
 	cost_tag.visible = false
 	hbox.add_child(cost_tag)
 
 	lock_hint = Label.new()
 	lock_hint.name = "LockHint"
 	lock_hint.add_theme_color_override("font_color", COLOR_LOCKED)
+	lock_hint.add_theme_font_size_override("font_size", 20)
 	lock_hint.visible = false
 	hbox.add_child(lock_hint)
 
@@ -115,7 +118,10 @@ func _apply_data() -> void:
 func _on_gui_input(event: InputEvent) -> void:
 	if not selectable:
 		return
+	# Support both mouse click and touch
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		choice_selected.emit(choice_index)
+	elif event is InputEventScreenTouch and event.pressed:
 		choice_selected.emit(choice_index)
 
 

@@ -44,52 +44,57 @@ func _ready() -> void:
 
 	var margin := MarginContainer.new()
 	margin.set_anchors_preset(Control.PRESET_FULL_RECT)
-	margin.add_theme_constant_override("margin_left", 60)
-	margin.add_theme_constant_override("margin_right", 60)
-	margin.add_theme_constant_override("margin_top", 40)
-	margin.add_theme_constant_override("margin_bottom", 40)
+	margin.add_theme_constant_override("margin_left", 24)
+	margin.add_theme_constant_override("margin_right", 24)
+	margin.add_theme_constant_override("margin_top", 24)
+	margin.add_theme_constant_override("margin_bottom", 24)
 	panel.add_child(margin)
 
 	var vbox := VBoxContainer.new()
 	vbox.add_theme_constant_override("separation", 12)
 	margin.add_child(vbox)
 
-	# Top row: Round + Heat
-	var top := HBoxContainer.new()
-	top.add_theme_constant_override("separation", 40)
+	# Top row: Round + Heat (vertical for portrait)
+	var top := VBoxContainer.new()
+	top.add_theme_constant_override("separation", 8)
 	vbox.add_child(top)
+
+	var top_row1 := HBoxContainer.new()
+	top_row1.add_theme_constant_override("separation", 24)
+	top.add_child(top_row1)
 
 	round_label = Label.new()
 	round_label.text = "ROUND 1"
-	round_label.add_theme_font_size_override("font_size", 28)
+	round_label.add_theme_font_size_override("font_size", 34)
 	round_label.add_theme_color_override("font_color", Color("#e0dbd4"))
-	top.add_child(round_label)
+	top_row1.add_child(round_label)
 
 	heat_label = Label.new()
 	heat_label.text = "HEAT: 0 / 8"
-	heat_label.add_theme_font_size_override("font_size", 28)
+	heat_label.add_theme_font_size_override("font_size", 34)
 	heat_label.add_theme_color_override("font_color", Color("#c85020"))
-	top.add_child(heat_label)
+	top_row1.add_child(heat_label)
 
 	var enemy_label := Label.new()
-	enemy_label.text = "VS: Viv Kane (Ego:%d) | Jules Rook (Ego:%d)" % [viv_ego, jules_ego]
+	enemy_label.text = "VS: Viv (Ego:%d) | Jules (Ego:%d)" % [viv_ego, jules_ego]
 	enemy_label.name = "EnemyLabel"
-	enemy_label.add_theme_font_size_override("font_size", 22)
+	enemy_label.add_theme_font_size_override("font_size", 28)
 	enemy_label.add_theme_color_override("font_color", Color("#d4845a"))
 	top.add_child(enemy_label)
 
 	# Info display
 	info_label = RichTextLabel.new()
 	info_label.bbcode_enabled = true
-	info_label.fit_content = true
-	info_label.custom_minimum_size = Vector2(0, 300)
-	info_label.add_theme_font_size_override("normal_font_size", 20)
+	info_label.fit_content = false
+	info_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	info_label.scroll_active = true
+	info_label.add_theme_font_size_override("normal_font_size", 24)
 	info_label.add_theme_color_override("default_color", Color("#e0dbd4"))
 	vbox.add_child(info_label)
 
-	# Action buttons
+	# Action buttons — large touch targets
 	btn_container = VBoxContainer.new()
-	btn_container.add_theme_constant_override("separation", 8)
+	btn_container.add_theme_constant_override("separation", 10)
 	vbox.add_child(btn_container)
 
 	var actions := ["PERFORM", "CONFESS", "CALL OUT", "DEFLECT", "GROUND"]
@@ -97,7 +102,8 @@ func _ready() -> void:
 	for i in actions.size():
 		var btn := Button.new()
 		btn.text = "%s  [%s]" % [actions[i], costs[i]]
-		btn.add_theme_font_size_override("font_size", 20)
+		btn.custom_minimum_size = Vector2(0, 64)
+		btn.add_theme_font_size_override("font_size", 26)
 		btn.pressed.connect(_on_action.bind(actions[i]))
 		btn_container.add_child(btn)
 		action_buttons[actions[i]] = btn

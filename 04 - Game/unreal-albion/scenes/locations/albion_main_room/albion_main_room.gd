@@ -34,21 +34,34 @@ func _ready() -> void:
 
 
 func _build_npc_buttons() -> void:
-	var viewport_size := Vector2(1280, 720)
+	# Use viewport size for responsive positioning
+	var viewport_size := get_viewport().get_visible_rect().size
+	if viewport_size == Vector2.ZERO:
+		viewport_size = Vector2(1080, 1920)  # fallback portrait
 
-	for npc in NPC_DATA:
+	# Portrait layout: stack NPC buttons vertically in center
+	var is_portrait: bool = viewport_size.y > viewport_size.x
+
+	for i in NPC_DATA.size():
+		var npc: Dictionary = NPC_DATA[i]
 		var btn := Button.new()
 		btn.name = "NPC_" + npc["id"]
 		btn.text = npc["label"]
-		btn.custom_minimum_size = Vector2(160, 60)
+		btn.custom_minimum_size = Vector2(280, 80)
 
-		# Position: spread across the screen horizontally, centered vertically
-		var x_pos: float = viewport_size.x * npc["x_ratio"] - 80.0
-		var y_pos: float = viewport_size.y * 0.6
-		btn.position = Vector2(x_pos, y_pos)
+		if is_portrait:
+			# Stack vertically in the center-bottom area
+			var x_pos: float = (viewport_size.x - 280.0) / 2.0
+			var y_pos: float = viewport_size.y * 0.45 + (i * 100.0)
+			btn.position = Vector2(x_pos, y_pos)
+		else:
+			# Spread horizontally (landscape fallback)
+			var x_pos: float = viewport_size.x * npc["x_ratio"] - 140.0
+			var y_pos: float = viewport_size.y * 0.6
+			btn.position = Vector2(x_pos, y_pos)
 
-		# Style
-		btn.add_theme_font_size_override("font_size", 20)
+		# Style — large touch targets
+		btn.add_theme_font_size_override("font_size", 30)
 
 		# Connect press signal — bind the npc id
 		btn.pressed.connect(_on_npc_pressed.bind(npc["id"]))

@@ -25,12 +25,12 @@ var _typewriter_tween: Tween
 
 
 func _ready() -> void:
-	# Anchor to bottom of screen, full width
+	# Anchor to bottom of screen, full width, taller for mobile
 	anchor_left = 0.0
 	anchor_top = 1.0
 	anchor_right = 1.0
 	anchor_bottom = 1.0
-	offset_top = -250
+	offset_top = -500
 	offset_left = 0
 	offset_right = 0
 	offset_bottom = 0
@@ -45,10 +45,10 @@ func _ready() -> void:
 	# MarginContainer
 	margin_container = MarginContainer.new()
 	margin_container.name = "MarginContainer"
-	margin_container.add_theme_constant_override("margin_left", 20)
-	margin_container.add_theme_constant_override("margin_right", 20)
-	margin_container.add_theme_constant_override("margin_top", 20)
-	margin_container.add_theme_constant_override("margin_bottom", 20)
+	margin_container.add_theme_constant_override("margin_left", 24)
+	margin_container.add_theme_constant_override("margin_right", 24)
+	margin_container.add_theme_constant_override("margin_top", 24)
+	margin_container.add_theme_constant_override("margin_bottom", 24)
 	add_child(margin_container)
 
 	# VBox layout
@@ -65,7 +65,7 @@ func _ready() -> void:
 	speaker_name = Label.new()
 	speaker_name.name = "SpeakerName"
 	speaker_name.add_theme_color_override("font_color", COLOR_ACCENT)
-	speaker_name.add_theme_font_size_override("font_size", 20)
+	speaker_name.add_theme_font_size_override("font_size", 30)
 	top_row.add_child(speaker_name)
 
 	# Text display
@@ -76,13 +76,13 @@ func _ready() -> void:
 	text_display.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	text_display.scroll_active = false
 	text_display.add_theme_color_override("default_color", COLOR_TEXT)
-	text_display.add_theme_font_size_override("normal_font_size", 18)
+	text_display.add_theme_font_size_override("normal_font_size", 28)
 	vbox.add_child(text_display)
 
 	# Choice container
 	choice_container = VBoxContainer.new()
 	choice_container.name = "ChoiceContainer"
-	choice_container.add_theme_constant_override("separation", 6)
+	choice_container.add_theme_constant_override("separation", 10)
 	choice_container.visible = false
 	vbox.add_child(choice_container)
 

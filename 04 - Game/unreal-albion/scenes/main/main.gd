@@ -2,6 +2,7 @@ extends Node2D
 
 const HUDScene := preload("res://ui/hud/hud.tscn")
 const DialogueBoxScene := preload("res://ui/dialogue_box/dialogue_box.tscn")
+const PhoneUIScene := preload("res://ui/phone_ui/phone_ui.tscn")
 const TransitionScene := preload("res://ui/transition/transition.tscn")
 
 var scene_container: Node2D
@@ -29,6 +30,10 @@ func _ready() -> void:
 	var dialogue_box := DialogueBoxScene.instantiate()
 	dialogue_box.name = "DialogueBox"
 	ui_layer.add_child(dialogue_box)
+
+	var phone_ui := PhoneUIScene.instantiate()
+	phone_ui.name = "PhoneUI"
+	ui_layer.add_child(phone_ui)
 
 	# Transition Layer (layer 20) for fade overlay
 	transition_layer = CanvasLayer.new()
