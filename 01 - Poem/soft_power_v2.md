@@ -470,7 +470,7 @@ Why judge, I was badly beaten, found by
 
 Loved ones, battered by an irate husband,
 
-Searching for a man that was not me.
+Searching for a man that was not I.
 
 Your honour was presented fraudulently.
 
