@@ -1,0 +1,21 @@
+{
+  "id": "jules_rook",
+  "name": "Jules Rook",
+  "instrument": "voice from crowd",
+  "genre": "grievance/memory",
+  "ego": 5,
+  "creativity": 3,
+  "attention": 3,
+  "signature_move": {
+    "name": "You Used To",
+    "creativity_cost": 1,
+    "effects": {"ego_damage": 2, "ego_damage_if_no_token": 1},
+    "conditions_for_full_damage": [{"flag": "jules_memory_token", "value": true}],
+    "line": "You used to make things nobody could invoice."
+  },
+  "basic_attack": {
+    "name": "Old Wounds",
+    "ego_damage": 1,
+    "line": "Careful. They clap hardest when they think the ruin is intentional."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "viv_kane",
+  "name": "Viv Kane",
+  "instrument": "phone/mic",
+  "genre": "commodification",
+  "ego": 6,
+  "creativity": 4,
+  "attention": 7,
+  "signature_move": {
+    "name": "Package You",
+    "creativity_cost": 2,
+    "effects": {
+      "steal_attention": 2,
+      "ego_damage": 1,
+      "lock_call_out": true
+    },
+    "line": "This is the point where talent becomes scheduling."
+  },
+  "basic_attack": {
+    "name": "Market Research",
+    "ego_damage": 1,
+    "line": "Good. Anger reads live."
+  }
+}

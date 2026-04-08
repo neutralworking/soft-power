@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "id": "scene_4_back_room",
+    "title": "Back Room Recovery",
+    "description": "Final moments before the stage. Alone in the back room with your nerves.",
+    "location": "The Albion — Back Room",
+    "time": "Night, late",
+    "entry_node": "back_room_intro"
+  },
+  "nodes": [
+    {
+      "id": "back_room_intro",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Music through concrete. Someone laughing outside the door. Your set in less than a minute. The room sounds enormous when you aren't in it.",
+      "next": "back_room_choice"
+    },
+    {
+      "id": "back_room_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "Breathe in the dark",
+          "costs": {},
+          "rewards": { "creativity": 2 },
+          "stat_effects": { "attention": -1 },
+          "set_flags": { "grounded": true },
+          "next": "breathe_response"
+        },
+        {
+          "text": "Leave a voice note",
+          "costs": {},
+          "rewards": {},
+          "stat_effects": { "ego": 1 },
+          "set_flags": { "vulnerable": true },
+          "next": "voicenote_response"
+        },
+        {
+          "text": "Rewrite the opening line",
+          "costs": { "creativity": 1 },
+          "rewards": {},
+          "set_flags": { "killer_opening": true },
+          "next": "rewrite_response"
+        }
+      ]
+    },
+    {
+      "id": "breathe_response",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "still",
+      "text": "One inhale you can own. One exhale nobody gets to monetize.",
+      "internal": true,
+      "next": "breathe_followup"
+    },
+    {
+      "id": "breathe_followup",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The dark doesn't judge. For a moment, you are only the sound of your own breathing and the distant thud of a kick drum that doesn't know your name.",
+      "next": "mirror_branch"
+    },
+    {
+      "id": "voicenote_response",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "raw",
+      "text": "Hey. It's me. I know you won't hear this tonight. I just needed someone to exist on the other end of something before I walk out there.",
+      "internal": false,
+      "next": "voicenote_ash"
+    },
+    {
+      "id": "voicenote_ash",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "You hit send before you can edit it. Ash will hear it tomorrow. By then it will either be embarrassing or prophetic. No middle ground with voice notes.",
+      "next": "mirror_branch"
+    },
+    {
+      "id": "rewrite_response",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "focused",
+      "text": "No. Not that line. Too eager. Too bloodless. Again.",
+      "internal": true,
+      "next": "rewrite_followup"
+    },
+    {
+      "id": "rewrite_followup",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "Three attempts on the back of a flyer. The fourth one sticks. You can feel it in your teeth — the opening line that bites back.",
+      "next": "mirror_branch"
+    },
+    {
+      "id": "mirror_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "ego", "min": 4 },
+          "next": "mirror_high_ego"
+        },
+        {
+          "check": { "stat": "attention", "min": 4 },
+          "next": "mirror_high_attention"
+        }
+      ],
+      "default": "mirror_default"
+    },
+    {
+      "id": "mirror_high_ego",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "confident",
+      "text": "The mirror shows someone who could walk out there and take the room apart. Whether that person exists outside the glass is tonight's open question.",
+      "internal": true,
+      "next": "stage_call"
+    },
+    {
+      "id": "mirror_high_attention",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "performative",
+      "text": "Good angle. Good lighting. The room already has a version of you — now go out there and make it match.",
+      "internal": true,
+      "next": "stage_call"
+    },
+    {
+      "id": "mirror_default",
+      "type": "line",
+      "speaker": "player",
+      "portrait_mood": "uncertain",
+      "text": "You don't look like someone about to be on stage. You look like someone about to be found out. But then — you always have.",
+      "internal": true,
+      "next": "stage_call"
+    },
+    {
+      "id": "stage_call",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "A knock on the door. Not polite. Functional. You're up.",
+      "next": "end_scene"
+    },
+    {
+      "id": "end_scene",
+      "type": "end",
+      "trigger_scene_change": "stage_confrontation"
+    }
+  ]
+}

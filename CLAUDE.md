@@ -36,17 +36,23 @@ This is an **Obsidian vault**, not a software repo. No git at root level. The `g
 - `SOFT POWER - DRAFT MANUSCRIPT V1.pdf` — definitive poem manuscript
 - `SP2 1.0.pdf` — Part II manuscript
 
-### The Ren'Py Game (`game/`)
+### Unreal Albion — Godot 4 Game (`04 - Game/unreal-albion/`)
 
-A visual novel adaptation in early development. Has its own `CLAUDE.md` with full technical details. Key points:
-- **Engine:** Ren'Py (`.rpy` script files)
-- **Current state:** ~107 lines covering Scene 1 only, no art/audio assets integrated
-- **Run via:** Ren'Py SDK launcher (add `game/` as project)
-- **Core files:** `script.rpy` (narrative), `screens.rpy` (UI), `gui.rpy` (styling), `options.rpy` (config)
+A narrative RPG with musical performance combat. Vertical slice: "The Albion: Night One" — a 20-30 minute evening at a Camden music venue.
+- **Engine:** Godot 4 (GDScript)
+- **Core systems:** Ego/Creativity/Attention three-stat economy, JSON-driven dialogue, turn-based Stage Confrontation combat, Attention Economy (shared Room Heat pool)
+- **Run via:** Open `04 - Game/unreal-albion/project.godot` in Godot 4.3+
+- **Key directories:** `autoloads/` (5 singletons), `scenes/locations/` (6 scenes), `ui/` (HUD, dialogue, phone, combat UI), `data/` (dialogue JSON, enemy data, passive inserts)
+- **Cast:** Ash Vale (PC), Mara Flint, Jules Rook, Viv Kane, Bootsy
+- **Three endings:** Breakthrough (survived with integrity), Compromise (sold out), Fold (Ego zero — became an NPC)
+
+### Legacy Ren'Py Game (`Soft Power/game/`)
+
+An earlier visual novel attempt (abandoned). Empty directory with error logs. Superseded by the Godot project above.
 
 ### Unreal Albion (D&D Campaign)
 
-A tabletop RPG adaptation with custom mechanics: **Ego** (HP), **Creativity** (Mana), **Attention** (Economy/currency). Scene breakdowns in `04 - Game/Scenes/`, mechanics in `04 - Game/Mechanics/`.
+A tabletop RPG adaptation with custom mechanics: **Ego** (HP), **Creativity** (Mana), **Attention** (Economy/currency). The SRD is embedded in the Brennan Mulligan skill (`.claude/skills/brennan-mulligan/SKILL.md`).
 
 ## Narrative Structure
 

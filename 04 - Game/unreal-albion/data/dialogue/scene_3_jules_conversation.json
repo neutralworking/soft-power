@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "id": "scene_3_jules_conversation",
+    "title": "Jules Rook Conversation",
+    "description": "Jules Rook confrontation in the main room. Old history, old wounds.",
+    "location": "The Albion — Main Room",
+    "time": "Night",
+    "entry_node": "jules_opening"
+  },
+  "nodes": [
+    {
+      "id": "jules_opening",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "bitter_warmth",
+      "text": "Funny. You always did arrive once the room was already built.",
+      "next": "jules_choice"
+    },
+    {
+      "id": "jules_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "I built what I could with what I had.",
+          "costs": { "creativity": 1 },
+          "rewards": {},
+          "set_flags": { "jules_hostile": true },
+          "next": "jules_hostile_response"
+        },
+        {
+          "text": "I did. I did. I was drowning and I picked the stupidest possible version of air.",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "jules_memory_softened": true },
+          "next": "jules_softened_response"
+        },
+        {
+          "text": "You saying this to help me or because the room finally came with witnesses?",
+          "costs": {},
+          "rewards": { "attention": 1 },
+          "stat_effects": { "room_heat": 1 },
+          "set_flags": { "jules_memory_token": true },
+          "next": "jules_witnesses_response"
+        },
+        {
+          "text": "[Say nothing]",
+          "costs": {},
+          "rewards": {},
+          "stat_effects": { "ego": -1 },
+          "set_flags": { "jules_memory_token": true },
+          "next": "jules_silence_response"
+        }
+      ]
+    },
+    {
+      "id": "jules_hostile_response",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "cold",
+      "text": "Built. Right. You built like a man pulling planks from someone else's house and calling it architecture.",
+      "next": "jules_hostile_exit"
+    },
+    {
+      "id": "jules_hostile_exit",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "turning_away",
+      "text": "Good luck tonight. I mean that in the way people mean it when they've stopped caring about the outcome.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "jules_softened_response",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "surprised",
+      "text": "Well. That's new. You admitting fault without a backing track.",
+      "next": "jules_softened_followup"
+    },
+    {
+      "id": "jules_softened_followup",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "guarded_warmth",
+      "text": "I'm not forgiving you. But I'm not here to collect, either. Do something worth the room tonight. That's all I've got.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "jules_witnesses_response",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "caught",
+      "text": "Both. Obviously both. You think honesty and performance are different things? They haven't been since we were seventeen.",
+      "next": "jules_witnesses_exit"
+    },
+    {
+      "id": "jules_witnesses_exit",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "reluctant_respect",
+      "text": "Fine. You've still got the instinct. Whether you deserve it is between you and whatever you're calling a conscience these days.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "jules_silence_response",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "searching",
+      "text": "Nothing? Really? You're going to stand there and let that land?",
+      "next": "jules_silence_followup"
+    },
+    {
+      "id": "jules_silence_followup",
+      "type": "line",
+      "speaker": "jules_rook",
+      "portrait_mood": "resigned",
+      "text": "Alright. Maybe that is the answer. Maybe you finally ran out of clever. There are worse things to lose.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "end_conversation",
+      "type": "end"
+    }
+  ]
+}

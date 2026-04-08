@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "id": "scene_3_viv_conversation",
+    "title": "Viv Kane Conversation",
+    "description": "Viv Kane approaches with an offer wrapped in observation. Industry gravity.",
+    "location": "The Albion — Main Room",
+    "time": "Night",
+    "entry_node": "viv_opening"
+  },
+  "nodes": [
+    {
+      "id": "viv_opening",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "warm_predatory",
+      "text": "There you are. I was hoping you'd be less raw by now, but raw can be positioned.",
+      "next": "viv_choice"
+    },
+    {
+      "id": "viv_choice",
+      "type": "choice_set",
+      "choices": [
+        {
+          "text": "Then position this: I can move a room faster than your roster can brief one.",
+          "costs": { "creativity": 1 },
+          "rewards": { "attention": 2 },
+          "set_flags": { "viv_package_flag": true, "viv_interested": true },
+          "next": "viv_impressed_response"
+        },
+        {
+          "text": "If you came to buy a version of me, you're early.",
+          "costs": {},
+          "rewards": {},
+          "set_flags": {},
+          "next": "viv_ego_branch"
+        },
+        {
+          "text": "What do you actually do besides appear near fragile people with budgets?",
+          "costs": {},
+          "rewards": {},
+          "set_flags": {},
+          "next": "viv_challenge_response"
+        },
+        {
+          "text": "Accept the drink",
+          "costs": {},
+          "rewards": {},
+          "set_flags": { "viv_package_flag": true, "accepted_token": true },
+          "next": "viv_drink_response"
+        }
+      ]
+    },
+    {
+      "id": "viv_impressed_response",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "delighted",
+      "text": "Oh, that's good. That's a pull quote. I can already see the deck.",
+      "next": "viv_impressed_followup"
+    },
+    {
+      "id": "viv_impressed_followup",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "business",
+      "text": "Play tonight like you mean it, and we'll talk after. Not the green room chat. The real one. With numbers.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "viv_ego_branch",
+      "type": "conditional_branch",
+      "conditions": [
+        {
+          "check": { "stat": "ego", "max": 2 },
+          "next": "viv_ego_low_response"
+        }
+      ],
+      "default": "viv_ego_high_response"
+    },
+    {
+      "id": "viv_ego_low_response",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "pitying",
+      "text": "Early? Darling, you look like the closing sale. But that's fine. Clearance has its own energy.",
+      "stat_effects": { "ego": -1 },
+      "next": "viv_ego_low_exit"
+    },
+    {
+      "id": "viv_ego_low_exit",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "She's already looking past you. The drink she ordered stays on the bar, unclaimed.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "viv_ego_high_response",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "recalibrating",
+      "text": "Fair enough. I respect a boundary that sounds like a lyric. But the window doesn't stay open because you're interesting. It stays open because I'm patient.",
+      "next": "viv_ego_high_exit"
+    },
+    {
+      "id": "viv_ego_high_exit",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "retreating",
+      "text": "You know where to find me. Everyone does. That's the point.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "viv_challenge_response",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "amused",
+      "text": "I appear near fragile people with talent and I make sure the budget follows. There's a difference, but you'd need to survive a meeting to learn it.",
+      "next": "viv_challenge_followup"
+    },
+    {
+      "id": "viv_challenge_followup",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "compromise",
+      "text": "Look — I'm not the enemy. I'm the translation layer. You make the thing. I make the thing legible to people with chequebooks. That's not corruption. That's plumbing.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "viv_drink_response",
+      "type": "line",
+      "speaker": "viv_kane",
+      "portrait_mood": "satisfied",
+      "text": "Smart. A drink is just a drink until it becomes a story about how we met. And I tell very good stories.",
+      "next": "viv_drink_followup"
+    },
+    {
+      "id": "viv_drink_followup",
+      "type": "line",
+      "speaker": "system",
+      "portrait_mood": null,
+      "text": "The glass is cold. The conversation is warm. You can already feel the shape of a deal forming, the way weather forms — not suddenly, but unmistakably.",
+      "next": "end_conversation"
+    },
+    {
+      "id": "end_conversation",
+      "type": "end"
+    }
+  ]
+}
