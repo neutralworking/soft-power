@@ -60,7 +60,7 @@ Here Joly stands, too scared-stiff to face the jury,
 
 Clutching empty bottles from a bought-out brewery.
 
-Thus a crossroads, halfway along Joly life\'s path.
+Thus a crossroads, halfway along Joly\'s life\'s path.
 
 A crooked lane through the dark wood, fumbling through farce.
 
@@ -174,7 +174,7 @@ Most talented malcontents, how woe betided!
 
 A mistake he\'d never make again, so he thought,
 
-Until Cosmo\'s ship never made it in to port.
+Until Cosmo\'s ship never made it into port.
 
 They buried his empty grave this April morning
 
@@ -454,11 +454,11 @@ I don\'t know the French for walk of shame.
 
 Dansons la capucine
 
-Ya de plasire chez nous
+Y\'a du plaisir chez nous
 
 On pleure chez la voisine
 
-On rire toujours chez nous
+On rit toujours chez nous
 
 For every word I write another
 
@@ -648,7 +648,7 @@ Deeply imprinted in children of influence
 
 Lives a conviction carved from continuance.
 
-Even in crystalis, gods in the embryo,
+Even in chrysalis, gods in the embryo,
 
 Pampered in champers, peppered in prep school.
 
@@ -866,7 +866,7 @@ Between us and those living in the sky
 
 The landscape has been scarred by the shard
 
-In its shadow the discarded share a minutes silence
+In its shadow the discarded share a minute\'s silence
 
 The only thing I need the man\'s help to buy
 
@@ -1070,7 +1070,7 @@ Walked my stage, I\'m fucking cosplayed by ospreys.
 
 **NORAH**
 
-Men tend die or disappoint, Evangeline.
+Men tend to die or disappoint, Evangeline.
 
 Yours are gone too, you\'ll forget them eventually.
 
@@ -1280,7 +1280,7 @@ Cos I\'m coming for your ass and I never miss,
 
 Put an MC down like an anesthetist,
 
-You\'re gonna need to call work and take of a week or six.
+You\'re gonna need to call work and take off a week or six.
 
 I\'m like a water man, I\'m in a fluid state.
 
@@ -1478,7 +1478,7 @@ I couldn\'t take it, there\'s so much more that I want to say.
 
 First I thought you were bluffing but still you\'re not here,
 
-I don\'t blame you, sometimes this world\'s too much to bare.
+I don\'t blame you, sometimes this world\'s too much to bear.
 
 You saw so much suffering, let me take the pain now.
 
