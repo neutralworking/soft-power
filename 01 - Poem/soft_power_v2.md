@@ -46,11 +46,11 @@ Some eyes here he\'d met before, some were only types.
 
 By the fire exit, stilettos too high for a wake.
 
-The garden overflow\'th with fruit overripe,
+The garden overflow\'th with fruit now overripe,
 
-Softening with bitterness, much like this rotten state
+Softening with bitterness, like this rotten state
 
-Of mind that he\'d been demarcated with of late.
+Of mind demarcated around the prince\'s crown.
 
 Appalled but drawn to parricidal decisions,
 
