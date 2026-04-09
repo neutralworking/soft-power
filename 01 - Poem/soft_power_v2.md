@@ -46,11 +46,11 @@ Some eyes here he\'d met before, some were only types.
 
 By the fire exit, stilettos too high for a wake.
 
-The garden overflow\'th with fruit overripe,
+The garden overflow\'th with fruit now overripe,
 
-Softening with bitterness, much like this rotten state
+Softening with bitterness, like this rotten state
 
-Of mind that he\'d been demarcated with of late.
+Of mind demarcated around the prince\'s crown.
 
 Appalled but drawn to parricidal decisions,
 
@@ -302,7 +302,7 @@ We held hands that August night down Rue de la Harpe
 
 Talking at length about our dreams.
 
-The words you said I couldn\'t say the same back.
+The words you said — I couldn\'t say them back.
 
 Forever will it take me to forget
 
@@ -316,9 +316,9 @@ That\'s the thing about good intentions,
 
 They perform the job of paving stones.
 
-Our hotel had sorts of cool inventions,
+Our hotel had a bath that played Debussy,
 
-A tad pretentious for my tastes but it came highly recommended
+Pretentious — but it came recommended
 
 By one of your wet mates from Rugby or Cambridge.
 
@@ -432,7 +432,7 @@ Even now I find it hard to explain,
 
 I don\'t know the French for walk of shame.
 
-Dansons la capucine
+Dansons la capucine,
 
 Y'a du plaisir chez nous
 
@@ -444,9 +444,7 @@ For every word I write another
 
 Seeks to follow, my pencil presses red hot
 
-Lead devouring paper and traversing
-
-Lines printed to marginalise content.
+Lead devouring paper. I can\'t stop.
 
 Here\'s the rub Prince, I\'m going back to England.
 
