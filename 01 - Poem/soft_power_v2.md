@@ -970,15 +970,23 @@ What? Put them through.
 
 Hello Ron.
 
+I wanted you to hear my voice, not your lawyers\'.
+
+The papers land on Monday. I\'ve kept the name —
+
+It tested well. The building\'s already mine,
+
+I signed the lease in December. Merry Christmas.
+
 *CUT TO DESTINY*
 
 **TYRESE**
 
-Destiny Vegas — burnished parlour, Liszt
+Destiny Vegas — your burnished parlour, Liszt
 
 closing out the room, Dante\'s Sonata —
 
-The triumphant close to her favourite stage
+The triumphant close to your favourite stage
 
 Of Années de Pèlerinage.
 
@@ -986,27 +994,27 @@ A google search yields that your real name is Anna
 
 But in a most typically public school manner
 
-Her Channing classmates used Bartholomew, although
+Your Channing classmates used Bartholomew, although
 
-Her doting parents called her Annie at home
+Your doting parents called you Annie at home
 
-Until she'd grown into something they couldn't price,
+Until you\'d grown into something they couldn\'t price,
 
 Their Annie with a valuation in her eyes,
 
-Who'd memorised the ceiling and its every crack
+Who\'d memorised the ceiling and its every crack
 
 And planned her exit through it, never looking back.
 
-She bared her teeth at boardrooms like a balance sheet —
+You bared your teeth at every boardroom table —
 
 The men saw flesh, the women saw the receipt.
 
-A girl who'd kill a name to build a better one.
-
-What should it be? Anna Bartholomew isn\'t a celebrity.
+A girl who\'d kill a name to build a better one.
 
 **DESTINY**
+
+Anna Bartholomew isn\'t a celebrity.
 
 How will I make them remember me?
 
@@ -1018,19 +1026,19 @@ On the ocean floor is the hermit crab reborn.
 
 **TYRESE**
 
-Destiny Manifest sits necking straight absinthe,
+Destiny Manifest, still necking straight absinthe,
 
-Measuring out her life with a silver teaspoon.
+Measuring out your life with a silver teaspoon.
 
-Her attic dressed with Greene, her wardrobe dressed with less —
+Your attic dressed with Greene, your wardrobe dressed with less —
 
 The strategy was simple: underpromise, overdress.
 
-She watched competitors from the height of her shoes
+You watched competitors from the height of your shoes
 
-And wondered why they feared the water when she'd learned to swim in it.
+And wondered why they feared the water you were born in.
 
-She set out to make the rain fall from the ceiling.
+You set out to make the rain fall from the ceiling.
 
 **SCENE THREE - REAL FRIENDS**
 
