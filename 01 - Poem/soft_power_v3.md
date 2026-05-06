@@ -718,9 +718,9 @@ Lyrical about two things he couldn\'t buy back.
 
 **TYRESE**
 
-The screen lit up his face — three words, a Monday,
+The screen lit Joly\'s face — Ron, three lines, a Monday,
 
-A number he hadn\'t typed in fourteen months.
+The takeover named in the language of contracts.
 
 He read it twice, then read the canal instead.
 
@@ -732,7 +732,7 @@ We are falling, like the recurring dream that brings
 
 Morning rushing in and cold sweat to my dry skin,
 
-Into pandemonium. The canal moves past.
+Into pandemonium. The canal slides black.
 
 Dwelling over rotten smoke, black clouds and ill will.
 
@@ -826,7 +826,7 @@ This is the way the world ends
 
 **JOLY**
 
-If she takes the masters, Cosmo dies a second time.
+If they take the masters, Cosmo dies a second time.
 
 Monday\'s three days. Let\'s see what\'s left of us by then.
 
@@ -1088,9 +1088,9 @@ He shuttles back and forth, like a badminton court.
 
 Ron\'s label\'s gone, some Destiny Vegas bought it.
 
-She\'ll be at the Albion tonight inspecting it.
+She\'ll be at the Albion tonight to count the bodies.
 
-Joly\'s been called. The Raptors of Vertigo
+Joly\'s been summoned. The Raptors of Vertigo
 
 Headlining for the woman who just bought them all.
 
@@ -1136,11 +1136,11 @@ Renews a disintegrated ricebowl.
 
 Norah dropped a coin and didn\'t recognise the girl,
 
-Or the song, or the matchbook with the Albion\'s name on it.
+Or the song, or the matchbook with the Albion\'s name.
 
-The girl played on. The matchbook stayed where Joly
+The girl played on. The case stayed open where Joly
 
-Had picked one up the night before, and not put back.
+Had taken one the night before, and not replaced it.
 
 *THEY REACH CAPTAIN NEVER\'S*
 
@@ -1159,6 +1159,12 @@ What have you been doing?
 You know me. Nevering.
 
 They\'re clearing the building. New owners. New names.
+
+I won\'t pretend I wasn\'t crushed when you left, Norah —
+
+I understood, but as you know I\'ve always
+
+Been a slave to regret. Next time call me, okay?
 
 There\'s a gig at the Albion tonight — your old crowd.
 
