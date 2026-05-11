@@ -1,11 +1,11 @@
-# Cover letter — Emma Paterson, Aitken Alexander Associates
+# Cover letter — Robert Caskie, Robert Caskie Ltd
 
-**To:** submissions@aitkenalexander.co.uk
-**Subject:** FAO Emma Paterson — Soft Power (verse drama in book form)
+**To:** *(verify current address on robertcaskie.com — typically `robert@robertcaskie.com` or a submissions form)*
+**Subject:** Soft Power — verse drama in book form
 
 ---
 
-Dear Emma,
+Dear Robert,
 
 In Camden everyone is almost famous. *Soft Power* is a verse drama in
 three acts and ten scenes, set across Maundy Thursday, Good Friday and
@@ -17,10 +17,10 @@ The protagonist is Jolyon Dox, an A&R man at his younger brother Cosmo’s
 wake in a Camden basement called Sunset. By Holy Saturday he’s worked
 out Cosmo never died, the funeral was theatre, and the gig his new band
 are about to play will be the cast’s last visible night. Modelled on
-Dante and Eliot; the closer comps are Caleb Femi’s *Poor* (Penguin,
-2020), Kae Tempest’s *Brand New Ancients* (Picador, 2013) and Max
-Porter’s *Grief is the Thing with Feathers* (Faber, 2015). About 80
-pages typeset, complete in V2 draft.
+Dante and Eliot; the closer comps are Inua Ellams’ *The Half-God of
+Rainfall* (4th Estate, 2019), Kae Tempest’s *Brand New Ancients*
+(Picador, 2013) and Max Porter’s *Grief is the Thing with Feathers*
+(Faber, 2015). About 80 pages typeset, complete in V2 draft.
 
 I was born and raised in Camden and went to Highgate, where Eliot taught
 Betjeman in 1916 — the lineage the book opens on (the epigraph is
@@ -43,17 +43,16 @@ luke.warrington@gmail.com
 
 ## What to attach
 
-1. **`soft_power_sample.pdf`** — the typeset sample (Scenes 1, 2 and 10
-   in book format).
-2. **`synopsis.docx`** — the one-paragraph synopsis (from
-   `synopsis.md`), copied into Word.
+1. **`soft_power_sample.pdf`** — the typeset sample.
+2. **`synopsis.docx`** — the one-paragraph synopsis.
 
 ## Notes
 
-- Aitken asks for Word-compatible attachments; PDF is accepted at
-  submission stage and the typeset sample makes the form claim a Word
-  doc cannot.
-- Subject line uses FAO Paterson per Aitken’s guidance.
-- Simultaneous-submission line is declared, as Aitken request.
-- Comp order leads with Femi (Paterson’s client), then Tempest (also
-  Paterson’s client), then Porter as the third.
+- Caskie is a boutique principal; the email goes directly to him, not via
+  a submissions inbox. Verify the current submission address on his
+  website before sending.
+- Comp order leads with Ellams (his client). Ellams’ *Half-God of
+  Rainfall* is the closest formal cousin to *Soft Power* and Caskie
+  knows the lane intimately.
+- No FAO line needed since the email is directly addressed to him.
+- Same simultaneous-submission declaration as the Paterson letter.
