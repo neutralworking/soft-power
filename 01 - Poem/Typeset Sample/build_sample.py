@@ -475,7 +475,7 @@ SCENE_10 = {
         ("stanza", [
             "They sell you back your face and call it content,",
             "Your likeness licensed, every click consent.",
-            "Cashed in rehashed weapon caches, spent",
+            "Cashed in rehashed weapon caches, that went",
             "On wars reframed before the smoke is spent.",
         ]),
         ("stanza", [
