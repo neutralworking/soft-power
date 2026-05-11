@@ -36,6 +36,14 @@ EPIGRAPH = [
 EPIGRAPH_CREDIT = "— John Betjeman, “The Conversion of St. Paul”"
 
 
+PROLOGUE_STANZA = [
+    "The only soul made brave enough to tell the tale,",
+    "You can call me the designated Raphael.",
+    "Follow close past sickened hearts out the bitter cold",
+    "To a yet unknowing subterranean world.",
+]
+
+
 SCENE_1 = {
     "act": "Act One",
     "act_subtitle": "Maundy Thursday",
@@ -43,12 +51,6 @@ SCENE_1 = {
     "title": "Elleh Toledoh",
     "setting": "Sunset Club, Camden. Cosmo’s wake.",
     "blocks": [
-        ("stanza", [
-            "The only soul made brave enough to tell the tale,",
-            "You can call me the designated Raphael.",
-            "Follow close past sickened hearts out the bitter cold",
-            "To a yet unknowing subterranean world.",
-        ]),
         ("stanza", [
             "Iced boots and coats defrosted in a hot Sunset,",
             "A hole on Chalk Farm Road built in an old bunker,",
@@ -223,7 +225,7 @@ SCENE_2 = {
             "Y’en a chez la voisine",
             "Mais ce n’est pas pour nous",
         ]),
-        ("narrator_resume",),
+        ("speaker", "Norah"),
         ("stanza", [
             "Forever bound to you, as the ancient saying goes.",
             "We held hands that August night down Rue de la Harpe",
@@ -294,7 +296,7 @@ SCENE_2 = {
             "Y’en a chez la voisine",
             "Mais ce n’est pas pour nous",
         ]),
-        ("narrator_resume",),
+        ("speaker", "Norah"),
         ("stanza", [
             "We smoked a fatty on the walk back from",
             "Montmartre to your flat in Batignolles,",
@@ -328,7 +330,7 @@ SCENE_2 = {
             "On pleure chez la voisine",
             "On rit toujours chez nous",
         ]),
-        ("narrator_resume",),
+        ("speaker", "Norah"),
         ("stanza", [
             "For every word I write another",
             "Seeks to follow, my pencil presses red hot",
@@ -563,6 +565,12 @@ HTML_BODY = f"""
   <p class="epigraph-credit">{EPIGRAPH_CREDIT}</p>
 </section>
 
+<section class="prologue-page">
+  <div class="prologue-stanza">
+    {'<br>'.join(PROLOGUE_STANZA)}
+  </div>
+</section>
+
 {render_scene(SCENE_1, first_in_act=True)}
 
 {render_scene(SCENE_2, first_in_act=False)}
@@ -645,6 +653,19 @@ body {
   font-style: italic;
   font-size: 10pt;
   color: #444;
+}
+
+/* ---------- Prologue page (narrator's frame) ---------- */
+
+.prologue-page {
+  page-break-before: always;
+  page-break-after: always;
+  padding-top: 70mm;
+}
+.prologue-stanza {
+  text-align: center;
+  font-size: 11pt;
+  line-height: 1.7;
 }
 
 /* ---------- Act and scene headings ---------- */
