@@ -23,22 +23,42 @@ Each piece can go to two magazines at once.
 
 ### Mind Rain
 
-1. **The London Magazine** — long poems welcome, fast turnaround, prestige
-2. **The White Review** — formal experiment, breakup material fits
+1. **The London Magazine** — long poems welcome, fast turnaround, prestige.
+   **Keep the italic context note** (*“Norah Healy, on a Eurostar from
+   Paris.”*) — fits their dramatic-monologue convention.
+2. **The White Review** — formal experiment, breakup material fits.
+   **Strip the context note.** They lean abstract / international; let
+   the poem fend for itself, open cold on *“Forever bound to you…”*
 
 ### I Feel No Guilt
 
-1. **PN Review** (Carcanet) — high prestige, exactly the territory
-2. **Magma** — voice-driven, dramatic-monologue-friendly
+1. **PN Review** (Carcanet) — high prestige, exactly the territory.
+   **Keep the context note.**
+2. **Magma** — voice-driven, dramatic-monologue-friendly. **Keep the
+   context note** — Magma readers expect character framing.
 
 ### Beggar’s News
 
-1. **Bath Magg** — short, sharp, contemporary
-2. **Poetry London** — topical / political readiness
+1. **Bath Magg** — short, sharp, contemporary. **No note needed**
+   (none in the file).
+2. **Poetry London** — topical / political readiness. **No note needed.**
 
 If any of these aren’t currently open for submissions, fall back to:
 *The Rialto, The North, Poetry Review, The Manchester Review,
-ANMLY (US), Granta Poetry.*
+ANMLY (US), Granta Poetry.* Same context-note logic: keep for
+traditional / dramatic-monologue-leaning magazines, strip for
+formally abstract ones.
+
+---
+
+## Adapting inline when you send
+
+You’ll be adapting per magazine in Submittable or email. Keep this open
+in another tab. For each piece, paste the verse and then either:
+
+- include the italic line at the top (London Mag, PN Review, Magma); or
+- strip it and let the poem open on its first verse line (White
+  Review, Bath Magg, Poetry London).
 
 ---
 
