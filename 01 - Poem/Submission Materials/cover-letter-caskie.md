@@ -1,6 +1,6 @@
 # Cover letter — Robert Caskie, Robert Caskie Ltd
 
-**To:** *(verify current address on robertcaskie.com — typically `robert@robertcaskie.com` or a submissions form)*
+**To:** submissions@robertcaskie.com
 **Subject:** Soft Power — verse drama in book form
 
 ---
@@ -48,11 +48,14 @@ luke.warrington@gmail.com
 
 ## Notes
 
-- Caskie is a boutique principal; the email goes directly to him, not via
-  a submissions inbox. Verify the current submission address on his
-  website before sending.
+- Caskie’s stated taste is literary and reading-group fiction (Enright,
+  McGregor, Barry, O’Farrell, Robinson, Toibin). Poetry and verse drama
+  aren’t on his wishlist — but he reps Ellams, so the form isn’t alien
+  to him. The Ellams comp does the work.
+- Submissions go to `submissions@robertcaskie.com`, not direct to
+  Robert. He says no response = pass (busy inbox).
 - Comp order leads with Ellams (his client). Ellams’ *Half-God of
-  Rainfall* is the closest formal cousin to *Soft Power* and Caskie
-  knows the lane intimately.
-- No FAO line needed since the email is directly addressed to him.
+  Rainfall* is the closest formal cousin to *Soft Power*.
+- Send in `.doc` / `.docx` format per the standard convention; PDF for
+  the typeset sample.
 - Same simultaneous-submission declaration as the Paterson letter.
