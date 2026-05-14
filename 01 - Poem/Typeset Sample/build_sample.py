@@ -33,7 +33,7 @@ EPIGRAPH = [
     "God grant before we die we all",
     "May see the light as did St. Paul.",
 ]
-EPIGRAPH_CREDIT = "— John Betjeman, “The Conversion of St. Paul”"
+EPIGRAPH_CREDIT = ", John Betjeman, “The Conversion of St. Paul”"
 
 
 PROLOGUE_STANZA = [
@@ -107,7 +107,7 @@ SCENE_1 = {
             "But now a face on every bus on Chalk Farm Road.",
             "She lived in the Camden Square flat with their daughter,",
             "He’d drifted so far out to Bermudan waters,",
-            "Six weeks since he’d changed her nappy — did she still wear them?",
+            "Six weeks since he’d changed her nappy , did she still wear them?",
             "He wasn’t even meant to be out late tonight.",
         ]),
         ("stage", "The spotlight shifts to the dancefloor."),
@@ -172,7 +172,7 @@ SCENE_1 = {
         ]),
         ("stage", "Joly and Tom do lines."),
         ("stanza", [
-            "We shared a charlie plug — Dante, you knew him —",
+            "We shared a charlie plug , Dante, you knew him ,",
             "In fact, I thought that the whole event was “catered”",
             "Because somebody bought him clean out last weekend,",
             "I almost made the mistake of not bringing any.",
@@ -231,7 +231,7 @@ SCENE_2 = {
             "We held hands that August night down Rue de la Harpe",
             "(Possibly before it changed its name)",
             "Talking at length about our dreams.",
-            "The words you said — I couldn’t say them back.",
+            "The words you said , I couldn’t say them back.",
         ]),
         ("stanza", [
             "Forever will it take me to forget",
@@ -243,7 +243,7 @@ SCENE_2 = {
         ]),
         ("stanza", [
             "Our hotel had a bath that played Debussy,",
-            "Pretentious — but it came recommended",
+            "Pretentious , but it came recommended",
             "By one of your wet mates from Rugby or Cambridge.",
             "Forever shall I question my choices,",
             "But how long will this monster stay voiceless?",
@@ -343,7 +343,7 @@ SCENE_2 = {
             "I’ve been trying to give it back since September.",
             "Don’t think you’ve hurt me, I’m impervious,",
             "From my very earliest memories",
-            "I’ve only been afraid of purgatory —",
+            "I’ve only been afraid of purgatory ,",
             "The curbed suburbs of Surbiton.",
         ]),
         ("stanza", [
@@ -550,7 +550,7 @@ def render_scene(scene, first_in_act=False):
 HTML_BODY = f"""
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Soft Power — sample</title></head>
+<head><meta charset="utf-8"><title>Soft Power , sample</title></head>
 <body>
 
 <section class="title-page">

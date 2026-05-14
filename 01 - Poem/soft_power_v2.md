@@ -116,7 +116,7 @@ She lived in the Camden Square flat with their daughter,
 
 He'd drifted so far out to Bermudan waters,
 
-Six weeks since he'd changed her nappy — did she still wear them?
+Six weeks since he'd changed her nappy , did she still wear them?
 
 He wasn\'t even meant to be out late tonight.
 
@@ -218,7 +218,7 @@ So I feel it\'s only fair in his honour, eh?
 
 *JOLY AND TOM DO LINES*
 
-We shared a charlie plug — Dante, you knew him —
+We shared a charlie plug , Dante, you knew him ,
 
 In fact, I thought that the whole event was \"catered\"
 
@@ -302,7 +302,7 @@ We held hands that August night down Rue de la Harpe
 
 Talking at length about our dreams.
 
-The words you said — I couldn\'t say them back.
+The words you said , I couldn\'t say them back.
 
 Forever will it take me to forget
 
@@ -318,7 +318,7 @@ They perform the job of paving stones.
 
 Our hotel had a bath that played Debussy,
 
-Pretentious — but it came recommended
+Pretentious , but it came recommended
 
 By one of your wet mates from Rugby or Cambridge.
 
@@ -458,7 +458,7 @@ Don\'t think you\'ve hurt me, I\'m impervious,
 
 From my very earliest memories
 
-I\'ve only been afraid of purgatory —
+I\'ve only been afraid of purgatory ,
 
 The curbed suburbs of Surbiton.
 
@@ -530,7 +530,7 @@ The door doesn't lock
 
 She pressed the matchbook into his palm and kept playing.
 
-He read the sleeve — The Albion, Bello Road — and pocketed it
+He read the sleeve , The Albion, Bello Road , and pocketed it
 
 Like a prescription he'd fill when the pain got worse.
 
@@ -664,7 +664,7 @@ The next step, I quit uni and Oxford in the same breath.
 
 That night I found an open mic and wrecked bars.
 
-WK was there, said I reminded him of someone —
+WK was there, said I reminded him of someone ,
 
 Couldn\'t place the face but knew the cadence from afar.
 
@@ -730,7 +730,7 @@ I need residents of Poet\'s Cemetery
 
 To represent me. Gandhi spinning thread
 
-At Tolstoy\'s Farm, his hands still clean — not mine.
+At Tolstoy\'s Farm, his hands still clean , not mine.
 
 Without the suffering, the canvas stays unprimed,
 
@@ -740,9 +740,9 @@ Memories more vivid than in pre-production.
 
 On every eyelid an advertisement, tiny
 
-Jewels glued around the brow — playful and shiny.
+Jewels glued around the brow , playful and shiny.
 
-The greatest poets — those they still speak about —
+The greatest poets , those they still speak about ,
 
 Survived on bread and coffin nails and doubt.
 
@@ -758,7 +758,7 @@ Of looking the other way. Some proles master prose
 
 And sit above the royals, but everyone knows
 
-The throne's a barstool and the crown's on loan —
+The throne's a barstool and the crown's on loan ,
 
 Gods to their apostles, students on their own.
 
@@ -934,7 +934,7 @@ Son, I\'m not losing this fucking company.
 
 Find me a band. You're good at finding things
 
-That cost me money — find one that brings it back.
+That cost me money , find one that brings it back.
 
 Your brother's death is worth a tour at least,
 
@@ -974,9 +974,9 @@ Hello Ron.
 
 **TYRESE**
 
-Destiny Vegas — burnished parlour, Liszt
+Destiny Vegas , burnished parlour, Liszt
 
-closing out the room, Dante\'s Sonata —
+closing out the room, Dante\'s Sonata ,
 
 The triumphant close to her favourite stage
 
@@ -998,7 +998,7 @@ Who'd memorised the ceiling and its every crack
 
 And planned her exit through it, never looking back.
 
-She bared her teeth at boardrooms like a balance sheet —
+She bared her teeth at boardrooms like a balance sheet ,
 
 The men saw flesh, the women saw the receipt.
 
@@ -1022,7 +1022,7 @@ Destiny Manifest sits necking straight absinthe,
 
 Measuring out her life with a silver teaspoon.
 
-Her attic dressed with Greene, her wardrobe dressed with less —
+Her attic dressed with Greene, her wardrobe dressed with less ,
 
 The strategy was simple: underpromise, overdress.
 
@@ -1406,7 +1406,7 @@ Cheese and chalk, a fraught painting on the wall.
 
 A rainy afternoon, the grey like television
 
-Left on in an empty room — the voltage low,
+Left on in an empty room , the voltage low,
 
 The atmosphere still charged with your decision.
 
