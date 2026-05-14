@@ -7,31 +7,25 @@
 
 Dear Emma,
 
-In Camden everyone is almost famous. *Soft Power* is a verse drama in
-three acts and ten scenes, set across Maundy Thursday, Good Friday and
-Holy Saturday in the Camden music scene. It’s a loop — the first line is
-the last, and the cast the final scene seems to kill is the cast the
-first scene is mourning.
-
-The protagonist is Jolyon Dox, an A&R man at his younger brother Cosmo’s
-wake in a Camden basement called Sunset. By Holy Saturday he’s worked
-out Cosmo never died, the funeral was theatre, and the gig his new band
-are about to play will be the cast’s last visible night. Modelled on
-Dante and Eliot; the form follows Evaristo’s *The Emperor’s Babe*, the
-closer contemporaries are Caleb Femi’s *Poor* (Penguin, 2020) and Kae
-Tempest’s *Brand New Ancients* (Picador, 2013). About 80 pages typeset,
-complete in V2 draft.
+*Soft Power* is a verse drama in three acts and ten scenes, set across
+Maundy Thursday, Good Friday and Holy Saturday in the Camden music scene.
+Jolyon Dox is attending his younger brother Cosmo’s wake at a club called
+Sunset; by the third act, the brothers are in the same room for the first
+time since Cosmo faked his own death at the Port of Spezia. The poem is a
+loop — its first line is its last, and the cast the final scene appears to
+kill is the cast the opening scene is mourning. About 80 pages typeset,
+complete in V2 draft. In form it follows Evaristo’s *The Emperor’s Babe*;
+the closer contemporaries are Caleb Femi’s *Poor* (Penguin, 2020) and
+Kae Tempest’s *Brand New Ancients* (Picador, 2013).
 
 I was born and raised in Camden and went to Highgate, where Eliot taught
-Betjeman in 1916 — the lineage the book opens on (the epigraph is
-Betjeman). I DJed and wrote songs through my teens and twenties on the
-London indie circuit. *Soft Power* was first staged at The Nines,
-Brixton, in 2017, with Slix Fleeingham of Ruff Sqwad playing Joly. I
-live in Prague.
+Betjeman in 1916. I DJed and wrote songs through my teens and twenties on
+the London indie circuit. *Soft Power* was staged at The Nines, Brixton,
+in 2017, with Slix Fleeingham of Ruff Sqwad playing Joly. I live in Prague.
 
 I’m submitting to a small number of agents at once. Attached: a twenty-
-page typeset sample (opening pages and the closing scene) and a short
-synopsis. Full manuscript ready when you want it.
+page typeset sample and a short synopsis. Full manuscript ready when you
+want it.
 
 Yours,
 Luke
