@@ -7,21 +7,25 @@
 
 Dear Emma,
 
-*Soft Power*: a verse drama, three acts, eighty pages. Jolyon Dox is at
-his brother Cosmo’s wake in a Camden basement. Cosmo staged his own death
-at the Port of Spezia. He is also at the party, masked. The book opens
-and ends at the same moment.
+I am writing with a verse drama, *Soft Power*, which I think may be of
+interest given your work with Bernardine Evaristo.
 
-The form is Evaristo’s *Emperor’s Babe* — which is why I’m writing to
-you. The contemporaries: Femi’s *Poor* (Penguin, 2020), Tempest’s *Brand
-New Ancients* (Picador, 2013).
+The poem opens at a wake: Jolyon Dox has come to mourn his younger
+brother Cosmo, reported drowned at the Port of Spezia. Cosmo is present,
+masked. The three acts follow the three Easter days — Maundy Thursday,
+Good Friday, Holy Saturday — and end at the moment they begin. The
+manuscript runs to approximately eighty pages.
 
-I grew up in Camden, spent my twenties on the circuit the poem inhabits.
-It was staged at The Nines, Brixton, 2017 — Slix Fleeingham of Ruff
-Sqwad as Joly.
+I grew up in Camden and spent much of my twenties writing and playing
+music there — the world the poem inhabits. The work was staged at The
+Nines, Brixton, in 2017.
 
-Submitting simultaneously to a few agents. Sample and synopsis attached.
-Full manuscript when you want it.
+I am enclosing a twenty-page sample and a synopsis, and am submitting to
+a small number of agents simultaneously. The full manuscript is available
+at your request.
+
+Yours sincerely,
+Luke
 
 Yours,
 Luke
