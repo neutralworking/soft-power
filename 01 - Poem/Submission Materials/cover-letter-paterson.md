@@ -17,10 +17,10 @@ The protagonist is Jolyon Dox, an A&R man at his younger brother Cosmo’s
 wake in a Camden basement called Sunset. By Holy Saturday he’s worked
 out Cosmo never died, the funeral was theatre, and the gig his new band
 are about to play will be the cast’s last visible night. Modelled on
-Dante and Eliot; the closer comps are Caleb Femi’s *Poor* (Penguin,
-2020), Kae Tempest’s *Brand New Ancients* (Picador, 2013) and Max
-Porter’s *Grief is the Thing with Feathers* (Faber, 2015). About 80
-pages typeset, complete in V2 draft.
+Dante and Eliot; the form follows Evaristo’s *The Emperor’s Babe*, the
+closer contemporaries are Caleb Femi’s *Poor* (Penguin, 2020) and Kae
+Tempest’s *Brand New Ancients* (Picador, 2013). About 80 pages typeset,
+complete in V2 draft.
 
 I was born and raised in Camden and went to Highgate, where Eliot taught
 Betjeman in 1916 — the lineage the book opens on (the epigraph is
@@ -55,5 +55,8 @@ luke.warrington@gmail.com
   doc cannot.
 - Subject line uses FAO Paterson per Aitken’s guidance.
 - Simultaneous-submission line is declared, as Aitken request.
-- Comp order leads with Femi (Paterson’s client), then Tempest (also
-  Paterson’s client), then Porter as the third.
+- Comp order: Evaristo (*The Emperor’s Babe*) as formal ancestor — she
+  reps Evaristo, this signals you know her list and names the shelf; Femi
+  (Paterson’s client) as closest contemporary; Tempest (Paterson’s
+  client) as second contemporary. Porter dropped — good market comp but
+  weakest formal match (prose poetry, not verse drama).
